@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "b777a2657a269a0bdc1367602edb8f82169e7f1d05c1940f52967bb1cc97ac50",
+      "name" : "TGPControls"
+    }
+  ],
+  "commitish" : "v4.0.0",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

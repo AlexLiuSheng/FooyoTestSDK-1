@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037381F1C884F000D2B7F /* AppDelegate.swift */; };
+		8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520373A1F1C884F000D2B7F /* ViewController.swift */; };
+		8520373E1F1C884F000D2B7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8520373C1F1C884F000D2B7F /* Main.storyboard */; };
+		852037401F1C884F000D2B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8520373F1F1C884F000D2B7F /* Assets.xcassets */; };
+		852037431F1C884F000D2B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852037411F1C884F000D2B7F /* LaunchScreen.storyboard */; };
+		8520374B1F1C927E000D2B7F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8520374A1F1C927E000D2B7F /* SnapKit.framework */; };
+		8520374C1F1C927E000D2B7F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8520374A1F1C927E000D2B7F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
+		852037681F1D0322000D2B7F /* NewItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037661F1D0322000D2B7F /* NewItineraryViewController.swift */; };
+		852037691F1D0322000D2B7F /* ChooseThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */; };
+		8520376B1F1D0372000D2B7F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewController.swift */; };
+		8520376E1F1D0405000D2B7F /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376C1F1D0405000D2B7F /* Scale.swift */; };
+		8520376F1F1D0405000D2B7F /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376D1F1D0405000D2B7F /* GradientButton.swift */; };
+		852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037701F1D0437000D2B7F /* NSobject-SS.swift */; };
+		852037731F1D0557000D2B7F /* UIView-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037721F1D0557000D2B7F /* UIView-SS.swift */; };
+		852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037741F1D0578000D2B7F /* UIFont-SS.swift */; };
+		852037771F1D0578000D2B7F /* UIColor-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037751F1D0578000D2B7F /* UIColor-SS.swift */; };
+		8520377A1F1D0656000D2B7F /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */; };
+		8520377D1F1D06C3000D2B7F /* UIImage-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */; };
+		8520377F1F1D072C000D2B7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377E1F1D072C000D2B7F /* Constant.swift */; };
+		852037811F1D07B6000D2B7F /* DateTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037801F1D07B6000D2B7F /* DateTimeTool.swift */; };
+		8520378C1F1D0E08000D2B7F /* FooyoTestSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */; };
+		852037901F1D0E08000D2B7F /* FooyoTestSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		852037941F1D0E33000D2B7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377E1F1D072C000D2B7F /* Constant.swift */; };
+		852037951F1D0E37000D2B7F /* UIImage-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */; };
+		852037961F1D0E40000D2B7F /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */; };
+		852037971F1D0E43000D2B7F /* DateTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037801F1D07B6000D2B7F /* DateTimeTool.swift */; };
+		852037981F1D0E45000D2B7F /* UIFont-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037741F1D0578000D2B7F /* UIFont-SS.swift */; };
+		852037991F1D0E48000D2B7F /* UIColor-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037751F1D0578000D2B7F /* UIColor-SS.swift */; };
+		8520379A1F1D0E4B000D2B7F /* NSobject-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037701F1D0437000D2B7F /* NSobject-SS.swift */; };
+		8520379B1F1D0E4D000D2B7F /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376C1F1D0405000D2B7F /* Scale.swift */; };
+		8520379C1F1D0E50000D2B7F /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376D1F1D0405000D2B7F /* GradientButton.swift */; };
+		8520379D1F1D0E52000D2B7F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewController.swift */; };
+		8520379E1F1D0E55000D2B7F /* NewItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037661F1D0322000D2B7F /* NewItineraryViewController.swift */; };
+		8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */; };
+		852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037721F1D0557000D2B7F /* UIView-SS.swift */; };
+		852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8520374A1F1C927E000D2B7F /* SnapKit.framework */; };
+		852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8520378D1F1D0E08000D2B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8520372D1F1C884F000D2B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 852037871F1D0E08000D2B7F;
+			remoteInfo = FooyoTestSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8520374D1F1C927E000D2B7F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				852037901F1D0E08000D2B7F /* FooyoTestSDK.framework in Embed Frameworks */,
+				8520374C1F1C927E000D2B7F /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		852037351F1C884F000D2B7F /* CarthageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852037381F1C884F000D2B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8520373A1F1C884F000D2B7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8520373D1F1C884F000D2B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8520373F1F1C884F000D2B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		852037421F1C884F000D2B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		852037441F1C884F000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8520374A1F1C927E000D2B7F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		8520374F1F1C92D2000D2B7F /* SnapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SnapKit.framework.dSYM; path = Carthage/Build/iOS/SnapKit.framework.dSYM; sourceTree = "<group>"; };
+		852037641F1D023C000D2B7F /* TGPControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGPControls.framework; path = Carthage/Build/iOS/TGPControls.framework; sourceTree = "<group>"; };
+		852037661F1D0322000D2B7F /* NewItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItineraryViewController.swift; sourceTree = "<group>"; };
+		852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseThemeViewController.swift; sourceTree = "<group>"; };
+		8520376A1F1D0372000D2B7F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8520376C1F1D0405000D2B7F /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		8520376D1F1D0405000D2B7F /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		852037701F1D0437000D2B7F /* NSobject-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSobject-SS.swift"; sourceTree = "<group>"; };
+		852037721F1D0557000D2B7F /* UIView-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-SS.swift"; sourceTree = "<group>"; };
+		852037741F1D0578000D2B7F /* UIFont-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-SS.swift"; sourceTree = "<group>"; };
+		852037751F1D0578000D2B7F /* UIColor-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-SS.swift"; sourceTree = "<group>"; };
+		852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-SS.swift"; sourceTree = "<group>"; };
+		8520377E1F1D072C000D2B7F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		852037801F1D07B6000D2B7F /* DateTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeTool.swift; sourceTree = "<group>"; };
+		852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FooyoTestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooyoTestSDK.h; sourceTree = "<group>"; };
+		8520378B1F1D0E08000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852037321F1C884F000D2B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */,
+				8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */,
+				8520374B1F1C927E000D2B7F /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852037841F1D0E08000D2B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */,
+				852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8520372C1F1C884F000D2B7F = {
+			isa = PBXGroup;
+			children = (
+				852037641F1D023C000D2B7F /* TGPControls.framework */,
+				8520374F1F1C92D2000D2B7F /* SnapKit.framework.dSYM */,
+				8520374A1F1C927E000D2B7F /* SnapKit.framework */,
+				852037371F1C884F000D2B7F /* CarthageTest */,
+				852037891F1D0E08000D2B7F /* FooyoTestSDK */,
+				852037361F1C884F000D2B7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		852037361F1C884F000D2B7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852037351F1C884F000D2B7F /* CarthageTest.app */,
+				852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852037371F1C884F000D2B7F /* CarthageTest */ = {
+			isa = PBXGroup;
+			children = (
+				852037821F1D0DCC000D2B7F /* package */,
+				852037381F1C884F000D2B7F /* AppDelegate.swift */,
+				8520373A1F1C884F000D2B7F /* ViewController.swift */,
+				8520373C1F1C884F000D2B7F /* Main.storyboard */,
+				8520373F1F1C884F000D2B7F /* Assets.xcassets */,
+				852037411F1C884F000D2B7F /* LaunchScreen.storyboard */,
+				852037441F1C884F000D2B7F /* Info.plist */,
+			);
+			path = CarthageTest;
+			sourceTree = "<group>";
+		};
+		852037821F1D0DCC000D2B7F /* package */ = {
+			isa = PBXGroup;
+			children = (
+				8520377E1F1D072C000D2B7F /* Constant.swift */,
+				8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */,
+				852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */,
+				852037801F1D07B6000D2B7F /* DateTimeTool.swift */,
+				852037741F1D0578000D2B7F /* UIFont-SS.swift */,
+				852037751F1D0578000D2B7F /* UIColor-SS.swift */,
+				852037701F1D0437000D2B7F /* NSobject-SS.swift */,
+				8520376C1F1D0405000D2B7F /* Scale.swift */,
+				8520376D1F1D0405000D2B7F /* GradientButton.swift */,
+				8520376A1F1D0372000D2B7F /* BaseViewController.swift */,
+				852037661F1D0322000D2B7F /* NewItineraryViewController.swift */,
+				852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */,
+				852037721F1D0557000D2B7F /* UIView-SS.swift */,
+			);
+			name = package;
+			sourceTree = "<group>";
+		};
+		852037891F1D0E08000D2B7F /* FooyoTestSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */,
+				8520378B1F1D0E08000D2B7F /* Info.plist */,
+			);
+			path = FooyoTestSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		852037851F1D0E08000D2B7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8520378C1F1D0E08000D2B7F /* FooyoTestSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		852037341F1C884F000D2B7F /* CarthageTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "CarthageTest" */;
+			buildPhases = (
+				852037311F1C884F000D2B7F /* Sources */,
+				852037321F1C884F000D2B7F /* Frameworks */,
+				852037331F1C884F000D2B7F /* Resources */,
+				8520374D1F1C927E000D2B7F /* Embed Frameworks */,
+				852037511F1C92FB000D2B7F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8520378E1F1D0E08000D2B7F /* PBXTargetDependency */,
+			);
+			name = CarthageTest;
+			productName = CarthageTest;
+			productReference = 852037351F1C884F000D2B7F /* CarthageTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		852037871F1D0E08000D2B7F /* FooyoTestSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852037911F1D0E09000D2B7F /* Build configuration list for PBXNativeTarget "FooyoTestSDK" */;
+			buildPhases = (
+				852037831F1D0E08000D2B7F /* Sources */,
+				852037841F1D0E08000D2B7F /* Frameworks */,
+				852037851F1D0E08000D2B7F /* Headers */,
+				852037861F1D0E08000D2B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FooyoTestSDK;
+			productName = FooyoTestSDK;
+			productReference = 852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8520372D1F1C884F000D2B7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yangfan Liu";
+				TargetAttributes = {
+					852037341F1C884F000D2B7F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K2ERF9J63R;
+						ProvisioningStyle = Automatic;
+					};
+					852037871F1D0E08000D2B7F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K2ERF9J63R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 852037301F1C884F000D2B7F /* Build configuration list for PBXProject "CarthageTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8520372C1F1C884F000D2B7F;
+			productRefGroup = 852037361F1C884F000D2B7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852037341F1C884F000D2B7F /* CarthageTest */,
+				852037871F1D0E08000D2B7F /* FooyoTestSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		852037331F1C884F000D2B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852037431F1C884F000D2B7F /* LaunchScreen.storyboard in Resources */,
+				852037401F1C884F000D2B7F /* Assets.xcassets in Resources */,
+				8520373E1F1C884F000D2B7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852037861F1D0E08000D2B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		852037511F1C92FB000D2B7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TGPControls.framework",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/SnapKit.framework",
+				"$(DERIVED_FILE_DIR)/TGPControls.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852037311F1C884F000D2B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8520376F1F1D0405000D2B7F /* GradientButton.swift in Sources */,
+				852037771F1D0578000D2B7F /* UIColor-SS.swift in Sources */,
+				8520377A1F1D0656000D2B7F /* ThemeCollectionViewCell.swift in Sources */,
+				8520376B1F1D0372000D2B7F /* BaseViewController.swift in Sources */,
+				8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */,
+				8520377D1F1D06C3000D2B7F /* UIImage-SS.swift in Sources */,
+				852037691F1D0322000D2B7F /* ChooseThemeViewController.swift in Sources */,
+				8520377F1F1D072C000D2B7F /* Constant.swift in Sources */,
+				852037811F1D07B6000D2B7F /* DateTimeTool.swift in Sources */,
+				852037681F1D0322000D2B7F /* NewItineraryViewController.swift in Sources */,
+				852037731F1D0557000D2B7F /* UIView-SS.swift in Sources */,
+				8520376E1F1D0405000D2B7F /* Scale.swift in Sources */,
+				852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */,
+				852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */,
+				852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852037831F1D0E08000D2B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */,
+				8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */,
+				8520379E1F1D0E55000D2B7F /* NewItineraryViewController.swift in Sources */,
+				8520379D1F1D0E52000D2B7F /* BaseViewController.swift in Sources */,
+				8520379C1F1D0E50000D2B7F /* GradientButton.swift in Sources */,
+				8520379B1F1D0E4D000D2B7F /* Scale.swift in Sources */,
+				8520379A1F1D0E4B000D2B7F /* NSobject-SS.swift in Sources */,
+				852037991F1D0E48000D2B7F /* UIColor-SS.swift in Sources */,
+				852037981F1D0E45000D2B7F /* UIFont-SS.swift in Sources */,
+				852037971F1D0E43000D2B7F /* DateTimeTool.swift in Sources */,
+				852037961F1D0E40000D2B7F /* ThemeCollectionViewCell.swift in Sources */,
+				852037951F1D0E37000D2B7F /* UIImage-SS.swift in Sources */,
+				852037941F1D0E33000D2B7F /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8520378E1F1D0E08000D2B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 852037871F1D0E08000D2B7F /* FooyoTestSDK */;
+			targetProxy = 8520378D1F1D0E08000D2B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8520373C1F1C884F000D2B7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8520373D1F1C884F000D2B7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		852037411F1C884F000D2B7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852037421F1C884F000D2B7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		852037451F1C884F000D2B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		852037461F1C884F000D2B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852037481F1C884F000D2B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2ERF9J63R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarthageTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.CarthageTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		852037491F1C884F000D2B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2ERF9J63R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarthageTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.CarthageTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		852037921F1D0E09000D2B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2ERF9J63R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FooyoTestSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.FooyoTestSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		852037931F1D0E09000D2B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2ERF9J63R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FooyoTestSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.FooyoTestSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852037301F1C884F000D2B7F /* Build configuration list for PBXProject "CarthageTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852037451F1C884F000D2B7F /* Debug */,
+				852037461F1C884F000D2B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "CarthageTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852037481F1C884F000D2B7F /* Debug */,
+				852037491F1C884F000D2B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		852037911F1D0E09000D2B7F /* Build configuration list for PBXNativeTarget "FooyoTestSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852037921F1D0E09000D2B7F /* Debug */,
+				852037931F1D0E09000D2B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8520372D1F1C884F000D2B7F /* Project object */;
+}
