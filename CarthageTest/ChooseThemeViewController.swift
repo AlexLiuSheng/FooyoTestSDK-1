@@ -9,7 +9,7 @@
 import UIKit
 //import SVProgressHUD
 
-class ChooseThemeViewController: BaseViewController {
+public class ChooseThemeViewController: BaseViewController {
     
     fileprivate var selected: Int?
     fileprivate var infoLabel: UILabel! = {
@@ -70,7 +70,7 @@ class ChooseThemeViewController: BaseViewController {
     // MARK: - Life Cycle
     
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.        
         navigationItem.title = "Choose Trip Themes"
@@ -87,7 +87,7 @@ class ChooseThemeViewController: BaseViewController {
         setConstraints()
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -142,14 +142,14 @@ class ChooseThemeViewController: BaseViewController {
 }
 
 extension ChooseThemeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Constants.themes.count
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let theme = Constants.themes[indexPath.row]
 //        let image = Constants.themesImage[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThemeCollectionViewCell.reuseIdentifier, for: indexPath) as! ThemeCollectionViewCell
@@ -162,7 +162,7 @@ extension ChooseThemeViewController: UICollectionViewDelegate, UICollectionViewD
         }
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: false)
 //        if selected.contains(indexPath.row) {
 //            selected.remove(at: selected.index(of: indexPath.row)!)

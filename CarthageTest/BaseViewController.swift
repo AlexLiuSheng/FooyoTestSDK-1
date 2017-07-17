@@ -11,7 +11,7 @@ import SnapKit
 //import SVProgressHUD
 //import ViewDeck
 
-class BaseViewController: UIViewController {
+public class BaseViewController: UIViewController {
     
     var statusBarHeight: CGFloat = 20
     var navigationBarHeight: CGFloat = 44
@@ -37,10 +37,10 @@ class BaseViewController: UIViewController {
         //        self.viewDeckController.view.addSubview(<#T##view: UIView##UIView#>)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -48,12 +48,12 @@ class BaseViewController: UIViewController {
 //        Constants.dynamicSuggestionView.delegate = self
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     

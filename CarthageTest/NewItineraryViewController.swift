@@ -15,7 +15,7 @@ enum Selected {
     case Duration
 }
 
-class NewItineraryViewController: BaseViewController {
+public class NewItineraryViewController: BaseViewController {
     
     fileprivate var selected: Selected?
 
@@ -179,7 +179,7 @@ class NewItineraryViewController: BaseViewController {
         return t
     }()
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -225,7 +225,7 @@ class NewItineraryViewController: BaseViewController {
         continueBtn.addTarget(self, action: #selector(continueHandler), for: .touchUpInside)
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -452,7 +452,7 @@ class NewItineraryViewController: BaseViewController {
 }
 
 extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         if let selected = selected {
             debugPrint(selected)
             if selected == .Duration || selected == .Time {
@@ -461,7 +461,7 @@ extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSour
         }
         return 0
     }
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if let selected = selected {
             debugPrint(selected)
             switch selected {
@@ -473,7 +473,7 @@ extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSour
         }
         return 0
     }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if let selected = selected {
             switch selected {
             case .Time:
@@ -486,7 +486,7 @@ extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if let selected = selected {
             switch selected {
             case .Time:
@@ -499,7 +499,7 @@ extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return Scale.scaleY(y: 30)
     }
 }
