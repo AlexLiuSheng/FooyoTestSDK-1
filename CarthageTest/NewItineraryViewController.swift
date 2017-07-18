@@ -38,9 +38,6 @@ public class NewItineraryViewController: BaseViewController {
 
     var dateDownArrow: UIImageView! = {
         let t = UIImageView()
-//        t.setBundleImage(name: "")
-//        t.setbu
-//        t.scaled
         t.applyBundleImage(name: "dropdown_arrow_down")
         t.contentMode = .center
         return t
