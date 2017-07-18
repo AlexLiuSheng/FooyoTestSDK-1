@@ -29,5 +29,10 @@ extension NSObject {
     func getItineraries() {
     }
     
-    
+//    func getBundleImage(name: String) -> UIImage {
+//        let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
+//        let bundle = Bundle(path: bundlePath)
+//        let resource: String = bundle!.path(forResource: name, ofType: "png")!
+//        return UIImage(contentsOfFile: resource)!
+//    }
 }

@@ -14,49 +14,70 @@ enum Selected {
     case Time
     case Duration
 }
+//func applyBundleImage(name: String) -> Void  {
+//    let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
+//    let bundle = Bundle(path: bundlePath)
+//    let resource: String = bundle!.path(forResource: name, ofType: "png")!
+//    self.image = UIImage(contentsOfFile: resource)
+//    //        return UIImage(contentsOfFile: resource)!
+//}
+
+//extension UIImageView {
+//    func applyBundleImage(name: String) -> Void  {
+//        let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
+//        let bundle = Bundle(path: bundlePath)
+//        let resource: String = bundle!.path(forResource: name, ofType: "png")!
+//        self.image = UIImage(contentsOfFile: resource)
+//        //        return UIImage(contentsOfFile: resource)!
+//    }
+//}
 
 public class NewItineraryViewController: BaseViewController {
     
     fileprivate var selected: Selected?
 
-    fileprivate var dateDownArrow: UIImageView! = {
+    var dateDownArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_down")
+//        t.setBundleImage(name: "")
+//        t.setbu
+//        t.scaled
+        t.applyBundleImage(name: "dropdown_arrow_down")
         t.contentMode = .center
         return t
     }()
     
     fileprivate var timeDownArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_down")
+        t.applyBundleImage(name: "dropdown_arrow_down")
+//        t.image.replace
         t.contentMode = .center
         return t
     }()
     
     fileprivate var durationDownArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_down")
+        t.applyBundleImage(name: "dropdown_arrow_down")
         t.contentMode = .center
         return t
     }()
     
     fileprivate var durationUpArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_up")
+        t.applyBundleImage(name: "dropdown_arrow_up")
         t.contentMode = .center
         return t
     }()
     
     fileprivate var dateUpArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_up")
+        t.applyBundleImage(name: "dropdown_arrow_up")
         t.contentMode = .center
         return t
     }()
     
     fileprivate var timeUpArrow: UIImageView! = {
         let t = UIImageView()
-        t.image = #imageLiteral(resourceName: "dropdown_arrow_up")
+        t.applyBundleImage(name: "dropdown_arrow_up")
         t.contentMode = .center
         return t
     }()
@@ -192,6 +213,9 @@ public class NewItineraryViewController: BaseViewController {
         view.addSubview(dateLabel)
         dateLabel.addSubview(dateUpArrow)
         dateLabel.addSubview(dateDownArrow)
+//        dateDownArrow.setbu
+//        dateDownArrow.setbu
+//        dateDownArrow.setBundleImage(name: "")
         view.addSubview(timeLabel)
         timeLabel.addSubview(timeUpArrow)
         timeLabel.addSubview(timeDownArrow)

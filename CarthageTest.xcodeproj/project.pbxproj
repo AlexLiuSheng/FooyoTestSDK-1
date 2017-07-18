@@ -48,6 +48,7 @@
 		852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
 		852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
 		852037DB1F1DB7A6000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
+		852037DD1F1DD98A000D2B7F /* UIImageView-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037DC1F1DD98A000D2B7F /* UIImageView-SS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooyoTestSDK.h; sourceTree = "<group>"; };
 		8520378B1F1D0E08000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoTestSDK.bundle; sourceTree = "<group>"; };
+		852037DC1F1DD98A000D2B7F /* UIImageView-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView-SS.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				852037661F1D0322000D2B7F /* NewItineraryViewController.swift */,
 				852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */,
 				852037721F1D0557000D2B7F /* UIView-SS.swift */,
+				852037DC1F1DD98A000D2B7F /* UIImageView-SS.swift */,
 			);
 			name = package;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				8520376E1F1D0405000D2B7F /* Scale.swift in Sources */,
 				852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */,
 				852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */,
+				852037DD1F1DD98A000D2B7F /* UIImageView-SS.swift in Sources */,
 				852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

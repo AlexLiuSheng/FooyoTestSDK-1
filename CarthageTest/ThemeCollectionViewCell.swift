@@ -76,19 +76,21 @@ class ThemeCollectionViewCell: UICollectionViewCell {
         case .Culture:
 //            imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
             //  Converted with Swiftify v1.0.6402 - https://objectivec2swift.com/
-            let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
-            let bundle = Bundle(path: bundlePath)
-            var resource: String = bundle!.path(forResource: "1_culture", ofType: "png")!
-            imageView.image = UIImage(contentsOfFile: resource)
+            imageView.applyBundleImage(name: "theme_1_culture_heritage")
         case .Family:
+            imageView.applyBundleImage(name: "theme_2_family_fun")
             imageView.image = #imageLiteral(resourceName: "theme_2_family_fun")
         case .Hip:
+            imageView.applyBundleImage(name: "theme_3_hip_hangouts")
             imageView.image = #imageLiteral(resourceName: "theme_3_hip_hangouts")
         case .Nature:
+            imageView.applyBundleImage(name: "theme_4_nature_wildlife")
             imageView.image = #imageLiteral(resourceName: "theme_4_nature_wildlife")
         case .Thrill:
+            imageView.applyBundleImage(name: "theme_5_thrills_adventures")
             imageView.image = #imageLiteral(resourceName: "theme_5_thrills_adventures")
         default:
+            imageView.applyBundleImage(name: "theme_6_culture_heritage")
             imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
         }
 //        let size = CGSize(width: contentView.frame.width, height: contentView.frame.height)

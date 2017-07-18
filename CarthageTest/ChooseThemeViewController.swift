@@ -9,6 +9,16 @@
 import UIKit
 //import SVProgressHUD
 
+extension UIImageView {
+    func applyBundleImage(name: String) -> Void  {
+        let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
+        let bundle = Bundle(path: bundlePath)
+        let resource: String = bundle!.path(forResource: name, ofType: "png")!
+        self.image = UIImage(contentsOfFile: resource)
+        //        return UIImage(contentsOfFile: resource)!
+    }
+}
+
 public class ChooseThemeViewController: BaseViewController {
     
     fileprivate var selected: Int?
@@ -58,13 +68,15 @@ public class ChooseThemeViewController: BaseViewController {
     fileprivate var autoIcon: UIImageView! = {
         let t = UIImageView()
         t.contentMode = .scaleAspectFit
-        t.image = #imageLiteral(resourceName: "auto")
+//        t.image = #imageLiteral(resourceName: "auto")
+        t.applyBundleImage(name: "auto")
         return t
     }()
     fileprivate var manualIcon: UIImageView! = {
         let t = UIImageView()
         t.contentMode = .scaleAspectFit
-        t.image = #imageLiteral(resourceName: "map_edit").imageByReplacingContentWithColor(color: .white)
+        t.applyBundleImage(name: "map_edit")
+//        t.image = #imageLiteral(resourceName: "map_edit").imageByReplacingContentWithColor(color: .white)
         return t
     }()
     // MARK: - Life Cycle
