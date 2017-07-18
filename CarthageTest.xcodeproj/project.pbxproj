@@ -47,6 +47,8 @@
 		852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8520374A1F1C927E000D2B7F /* SnapKit.framework */; };
 		852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
 		852037CF1F1D2188000D2B7F /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 8520373F1F1C884F000D2B7F /* Assets.xcassets */; };
+		852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
+		852037DA1F1DB503000D2B7F /* FooyoTestSDK.bundle in Sources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,7 @@
 		852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FooyoTestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooyoTestSDK.h; sourceTree = "<group>"; };
 		8520378B1F1D0E08000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoTestSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 		8520372C1F1C884F000D2B7F = {
 			isa = PBXGroup;
 			children = (
+				852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */,
 				852037641F1D023C000D2B7F /* TGPControls.framework */,
 				8520374F1F1C92D2000D2B7F /* SnapKit.framework.dSYM */,
 				8520374A1F1C927E000D2B7F /* SnapKit.framework */,
@@ -289,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852037431F1C884F000D2B7F /* LaunchScreen.storyboard in Resources */,
+				852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */,
 				852037401F1C884F000D2B7F /* Assets.xcassets in Resources */,
 				8520373E1F1C884F000D2B7F /* Main.storyboard in Resources */,
 			);
@@ -350,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852037DA1F1DB503000D2B7F /* FooyoTestSDK.bundle in Sources */,
 				852037CF1F1D2188000D2B7F /* Assets.xcassets in Sources */,
 				852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */,
 				8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */,

@@ -74,7 +74,12 @@ class ThemeCollectionViewCell: UICollectionViewCell {
         nameLabel.text = theme.rawValue
         switch theme {
         case .Culture:
-            imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
+//            imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
+            //  Converted with Swiftify v1.0.6402 - https://objectivec2swift.com/
+            let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
+            let bundle = Bundle(path: bundlePath)
+            var resource: String = bundle!.path(forResource: "1_culture", ofType: "png")!
+            imageView.image = UIImage(contentsOfFile: resource)
         case .Family:
             imageView.image = #imageLiteral(resourceName: "theme_2_family_fun")
         case .Hip:
