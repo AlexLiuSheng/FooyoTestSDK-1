@@ -10,16 +10,20 @@ import UIKit
 //import SVProgressHUD
 
 extension UIImageView {
-    func applyBundleImage(name: String) -> Void  {
+    func applyBundleImage(name: String, replaceColor: UIColor? = nil) -> Void  {
         let bundlePath: String = Bundle.main.path(forResource: "FooyoTestSDK", ofType: "bundle")!
         let bundle = Bundle(path: bundlePath)
         let resource: String = bundle!.path(forResource: name, ofType: "png")!
-        self.image = UIImage(contentsOfFile: resource)
+        if let color = replaceColor {
+            self.image = UIImage(contentsOfFile: resource)?.imageByReplacingContentWithColor(color: color)
+        } else {
+            self.image = UIImage(contentsOfFile: resource)
+        }
         //        return UIImage(contentsOfFile: resource)!
     }
 }
 
-public class ChooseThemeViewController: BaseViewController {
+ class ChooseThemeViewController: BaseViewController {
     
     fileprivate var selected: Int?
     fileprivate var infoLabel: UILabel! = {
@@ -82,7 +86,7 @@ public class ChooseThemeViewController: BaseViewController {
     // MARK: - Life Cycle
     
     
-    override public func viewDidLoad() {
+    override  func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.        
         navigationItem.title = "Choose Trip Themes"
@@ -99,7 +103,7 @@ public class ChooseThemeViewController: BaseViewController {
         setConstraints()
     }
 
-    override public func didReceiveMemoryWarning() {
+    override  func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -154,14 +158,14 @@ public class ChooseThemeViewController: BaseViewController {
 }
 
 extension ChooseThemeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Constants.themes.count
     }
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let theme = Constants.themes[indexPath.row]
 //        let image = Constants.themesImage[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThemeCollectionViewCell.reuseIdentifier, for: indexPath) as! ThemeCollectionViewCell
@@ -174,7 +178,7 @@ extension ChooseThemeViewController: UICollectionViewDelegate, UICollectionViewD
         }
         return cell
     }
-    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: false)
 //        if selected.contains(indexPath.row) {
 //            selected.remove(at: selected.index(of: indexPath.row)!)

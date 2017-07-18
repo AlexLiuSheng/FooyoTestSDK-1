@@ -41,9 +41,8 @@ class ViewController: UIViewController {
     }
     
     func sdkHandler() {
-        let vc = NewItineraryViewController()
+        let vc = FooyoSDKNewItineraryViewController()
         let nav = UINavigationController(rootViewController: vc)
         self.present(nav, animated: true, completion: nil)
-//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

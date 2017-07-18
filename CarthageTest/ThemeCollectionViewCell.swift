@@ -31,7 +31,8 @@ class ThemeCollectionViewCell: UICollectionViewCell {
     fileprivate var selectedIcon: UIImageView! = {
         let t = UIImageView()
         t.contentMode = .scaleAspectFit
-        t.image = #imageLiteral(resourceName: "theme_selected").imageByReplacingContentWithColor(color: UIColor.sntTomato)
+        t.applyBundleImage(name: "theme_selected", replaceColor: UIColor.sntTomato)
+//        t.image = #imageLiteral(resourceName: "theme_selected").imageByReplacingContentWithColor(color: UIColor.sntTomato)
         return t
     }()
     
@@ -79,19 +80,19 @@ class ThemeCollectionViewCell: UICollectionViewCell {
             imageView.applyBundleImage(name: "theme_1_culture_heritage")
         case .Family:
             imageView.applyBundleImage(name: "theme_2_family_fun")
-            imageView.image = #imageLiteral(resourceName: "theme_2_family_fun")
+//            imageView.image = #imageLiteral(resourceName: "theme_2_family_fun")
         case .Hip:
             imageView.applyBundleImage(name: "theme_3_hip_hangouts")
-            imageView.image = #imageLiteral(resourceName: "theme_3_hip_hangouts")
+//            imageView.image = #imageLiteral(resourceName: "theme_3_hip_hangouts")
         case .Nature:
             imageView.applyBundleImage(name: "theme_4_nature_wildlife")
-            imageView.image = #imageLiteral(resourceName: "theme_4_nature_wildlife")
+//            imageView.image = #imageLiteral(resourceName: "theme_4_nature_wildlife")
         case .Thrill:
             imageView.applyBundleImage(name: "theme_5_thrills_adventures")
-            imageView.image = #imageLiteral(resourceName: "theme_5_thrills_adventures")
+//            imageView.image = #imageLiteral(resourceName: "theme_5_thrills_adventures")
         default:
             imageView.applyBundleImage(name: "theme_6_culture_heritage")
-            imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
+//            imageView.image = #imageLiteral(resourceName: "theme_1_culture_heritage")
         }
 //        let size = CGSize(width: contentView.frame.width, height: contentView.frame.height)
 //        imageView.af_setImage(

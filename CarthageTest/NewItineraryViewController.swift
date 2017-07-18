@@ -32,7 +32,7 @@ enum Selected {
 //    }
 //}
 
-public class NewItineraryViewController: BaseViewController {
+public class FooyoSDKNewItineraryViewController: BaseViewController {
     
     fileprivate var selected: Selected?
 
@@ -472,7 +472,7 @@ public class NewItineraryViewController: BaseViewController {
     }
 }
 
-extension NewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension FooyoSDKNewItineraryViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         if let selected = selected {
             debugPrint(selected)
