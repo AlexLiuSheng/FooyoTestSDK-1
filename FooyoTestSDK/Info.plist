@@ -20,5 +20,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+    <key>MGLMapboxAccessToken</key>
+    <string>pk.eyJ1IjoicHVzaGlhbiIsImEiOiJjaXdyaXptNDAweG1rMm90YmRnZHl0dDFpIn0.9kBN2eXNRe3uZ9VMoMhfhg</string>
+
 </dict>
 </plist>

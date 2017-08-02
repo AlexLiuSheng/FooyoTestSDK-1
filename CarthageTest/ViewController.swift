@@ -30,7 +30,6 @@ class ViewController: UIViewController {
             make.leading.equalTo(50)
             make.trailing.equalTo(-50)
         }
-        
     }
 //
     
@@ -41,7 +40,8 @@ class ViewController: UIViewController {
     }
     
     func sdkHandler() {
-        let vc = FooyoSDKNewItineraryViewController()
+//        let vc = FooyoSDKNewItineraryViewController()
+        let vc = FooyoBaseMapViewController()
         let nav = UINavigationController(rootViewController: vc)
         self.present(nav, animated: true, completion: nil)
     }

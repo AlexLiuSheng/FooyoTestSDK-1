@@ -48,6 +48,9 @@
 		852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
 		852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
 		852037E21F1DE4C2000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
+		85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
+		85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
+		85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,8 @@
 		8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooyoTestSDK.h; sourceTree = "<group>"; };
 		8520378B1F1D0E08000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoTestSDK.bundle; sourceTree = "<group>"; };
+		85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooyoBaseMapViewController.swift; sourceTree = "<group>"; };
+		85AF46DB1F31846A002CC6E5 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */,
 				852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */,
 				8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */,
 				8520374B1F1C927E000D2B7F /* SnapKit.framework in Frameworks */,
@@ -120,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */,
 				852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */,
 				852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */,
 			);
@@ -138,6 +145,7 @@
 				852037371F1C884F000D2B7F /* CarthageTest */,
 				852037891F1D0E08000D2B7F /* FooyoTestSDK */,
 				852037361F1C884F000D2B7F /* Products */,
+				85AF46DA1F31846A002CC6E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +161,8 @@
 		852037371F1C884F000D2B7F /* CarthageTest */ = {
 			isa = PBXGroup;
 			children = (
+				85AF46D71F31800D002CC6E5 /* Common */,
+				85AF46D61F317F7F002CC6E5 /* BaseMap */,
 				852037821F1D0DCC000D2B7F /* package */,
 				852037381F1C884F000D2B7F /* AppDelegate.swift */,
 				8520373A1F1C884F000D2B7F /* ViewController.swift */,
@@ -191,6 +201,29 @@
 				8520378B1F1D0E08000D2B7F /* Info.plist */,
 			);
 			path = FooyoTestSDK;
+			sourceTree = "<group>";
+		};
+		85AF46D61F317F7F002CC6E5 /* BaseMap */ = {
+			isa = PBXGroup;
+			children = (
+				85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */,
+			);
+			name = BaseMap;
+			sourceTree = "<group>";
+		};
+		85AF46D71F31800D002CC6E5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		85AF46DA1F31846A002CC6E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85AF46DB1F31846A002CC6E5 /* Mapbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,10 +350,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TGPControls.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/SnapKit.framework",
 				"$(DERIVED_FILE_DIR)/TGPControls.framework",
+				"$(DERIVED_FILE_DIR)/Mapbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,6 +382,7 @@
 				8520376E1F1D0405000D2B7F /* Scale.swift in Sources */,
 				852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */,
 				852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */,
+				85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
 				852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
