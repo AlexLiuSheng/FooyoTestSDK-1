@@ -1,3 +1,7 @@
 github "SnapKit/SnapKit" ~> 3.2.0
 github "SwiftArchitect/TGPControls"
+github "Alamofire/AlamofireImage" ~> 3.1
+github "SVProgressHUD/SVProgressHUD"
+github "SwiftyJSON/SwiftyJSON"
+github "AndrewSB/DateTools" "swift3"
 binary "https://www.mapbox.com/ios-sdk/Mapbox-iOS-SDK.json" ~> 3.6

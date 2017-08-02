@@ -52,6 +52,22 @@
 		85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
 		85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
 		85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
+		85AF46E31F31D05D002CC6E5 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */; };
+		85AF46E51F31D164002CC6E5 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */; };
+		85AF46E81F31D23D002CC6E5 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E71F31D23D002CC6E5 /* Itinerary.swift */; };
+		85AF46EA1F31D24B002CC6E5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E91F31D24B002CC6E5 /* BaseModel.swift */; };
+		85AF46EC1F31D521002CC6E5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46EB1F31D521002CC6E5 /* SwiftyJSON.framework */; };
+		85AF46F31F31D78C002CC6E5 /* MyCustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46EF1F31D78C002CC6E5 /* MyCustomPointAnnotation.swift */; };
+		85AF46F41F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F01F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift */; };
+		85AF46F51F31D78C002CC6E5 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F11F31D78C002CC6E5 /* CustomCalloutView.swift */; };
+		85AF46F61F31D78C002CC6E5 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F21F31D78C002CC6E5 /* CustomAnnotationView.swift */; };
+		85AF46F91F31D8D4002CC6E5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F81F31D8D4002CC6E5 /* HTTPClient.swift */; };
+		85AF46FB1F31D8DB002CC6E5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46FA1F31D8DB002CC6E5 /* Item.swift */; };
+		85AF46FF1F31D9C5002CC6E5 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */; };
+		85AF47021F31DD43002CC6E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47001F31DD43002CC6E5 /* Theme.swift */; };
+		85AF47031F31DD43002CC6E5 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47011F31DD43002CC6E5 /* Bus.swift */; };
+		85AF47051F32267E002CC6E5 /* TESTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47041F32267E002CC6E5 /* TESTViewController.swift */; };
+		85AF47071F322746002CC6E5 /* UILabel-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47061F322746002CC6E5 /* UILabel-SS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +125,22 @@
 		852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoTestSDK.bundle; sourceTree = "<group>"; };
 		85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooyoBaseMapViewController.swift; sourceTree = "<group>"; };
 		85AF46DB1F31846A002CC6E5 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		85AF46E71F31D23D002CC6E5 /* Itinerary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
+		85AF46E91F31D24B002CC6E5 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		85AF46EB1F31D521002CC6E5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		85AF46EF1F31D78C002CC6E5 /* MyCustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomPointAnnotation.swift; sourceTree = "<group>"; };
+		85AF46F01F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutViewItinerary.swift; sourceTree = "<group>"; };
+		85AF46F11F31D78C002CC6E5 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
+		85AF46F21F31D78C002CC6E5 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		85AF46F81F31D8D4002CC6E5 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		85AF46FA1F31D8DB002CC6E5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		85AF47001F31DD43002CC6E5 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		85AF47011F31DD43002CC6E5 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		85AF47041F32267E002CC6E5 /* TESTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TESTViewController.swift; sourceTree = "<group>"; };
+		85AF47061F322746002CC6E5 /* UILabel-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel-SS.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +148,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AF46EC1F31D521002CC6E5 /* SwiftyJSON.framework in Frameworks */,
+				85AF46E51F31D164002CC6E5 /* SVProgressHUD.framework in Frameworks */,
+				85AF46E31F31D05D002CC6E5 /* AlamofireImage.framework in Frameworks */,
 				85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */,
 				852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */,
 				8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */,
@@ -162,6 +197,9 @@
 		852037371F1C884F000D2B7F /* CarthageTest */ = {
 			isa = PBXGroup;
 			children = (
+				85AF46F71F31D8C3002CC6E5 /* HTTP */,
+				85AF46ED1F31D738002CC6E5 /* Widget */,
+				85AF46E61F31D1D7002CC6E5 /* Model */,
 				85AF46D71F31800D002CC6E5 /* Common */,
 				85AF46D61F317F7F002CC6E5 /* BaseMap */,
 				852037821F1D0DCC000D2B7F /* package */,
@@ -178,19 +216,12 @@
 		852037821F1D0DCC000D2B7F /* package */ = {
 			isa = PBXGroup;
 			children = (
-				8520377E1F1D072C000D2B7F /* Constant.swift */,
-				8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */,
 				852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */,
 				852037801F1D07B6000D2B7F /* DateTimeTool.swift */,
-				852037741F1D0578000D2B7F /* UIFont-SS.swift */,
-				852037751F1D0578000D2B7F /* UIColor-SS.swift */,
-				852037701F1D0437000D2B7F /* NSobject-SS.swift */,
 				8520376C1F1D0405000D2B7F /* Scale.swift */,
 				8520376D1F1D0405000D2B7F /* GradientButton.swift */,
-				8520376A1F1D0372000D2B7F /* BaseViewController.swift */,
 				852037661F1D0322000D2B7F /* NewItineraryViewController.swift */,
 				852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */,
-				852037721F1D0557000D2B7F /* UIView-SS.swift */,
 			);
 			name = package;
 			sourceTree = "<group>";
@@ -207,6 +238,8 @@
 		85AF46D61F317F7F002CC6E5 /* BaseMap */ = {
 			isa = PBXGroup;
 			children = (
+				85AF47041F32267E002CC6E5 /* TESTViewController.swift */,
+				85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */,
 				85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */,
 			);
 			name = BaseMap;
@@ -215,6 +248,7 @@
 		85AF46D71F31800D002CC6E5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8520376A1F1D0372000D2B7F /* BaseViewController.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -222,9 +256,74 @@
 		85AF46DA1F31846A002CC6E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85AF46EB1F31D521002CC6E5 /* SwiftyJSON.framework */,
+				85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */,
+				85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */,
 				85AF46DB1F31846A002CC6E5 /* Mapbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85AF46E61F31D1D7002CC6E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85AF47001F31DD43002CC6E5 /* Theme.swift */,
+				85AF47011F31DD43002CC6E5 /* Bus.swift */,
+				85AF46FA1F31D8DB002CC6E5 /* Item.swift */,
+				85AF46E91F31D24B002CC6E5 /* BaseModel.swift */,
+				85AF46E71F31D23D002CC6E5 /* Itinerary.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		85AF46ED1F31D738002CC6E5 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				85AF46FD1F31D919002CC6E5 /* Extension */,
+				85AF46FC1F31D90C002CC6E5 /* Utility */,
+				85AF46EE1F31D77F002CC6E5 /* Map */,
+			);
+			name = Widget;
+			sourceTree = "<group>";
+		};
+		85AF46EE1F31D77F002CC6E5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				85AF46EF1F31D78C002CC6E5 /* MyCustomPointAnnotation.swift */,
+				85AF46F01F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift */,
+				85AF46F11F31D78C002CC6E5 /* CustomCalloutView.swift */,
+				85AF46F21F31D78C002CC6E5 /* CustomAnnotationView.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		85AF46F71F31D8C3002CC6E5 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				85AF46F81F31D8D4002CC6E5 /* HTTPClient.swift */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		85AF46FC1F31D90C002CC6E5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8520377E1F1D072C000D2B7F /* Constant.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		85AF46FD1F31D919002CC6E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				85AF47061F322746002CC6E5 /* UILabel-SS.swift */,
+				8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */,
+				852037741F1D0578000D2B7F /* UIFont-SS.swift */,
+				852037751F1D0578000D2B7F /* UIColor-SS.swift */,
+				852037701F1D0437000D2B7F /* NSobject-SS.swift */,
+				852037721F1D0557000D2B7F /* UIView-SS.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,11 +451,17 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TGPControls.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/SnapKit.framework",
 				"$(DERIVED_FILE_DIR)/TGPControls.framework",
 				"$(DERIVED_FILE_DIR)/Mapbox.framework",
+				"$(DERIVED_FILE_DIR)/AlamofireImage.framework",
+				"$(DERIVED_FILE_DIR)/SVProgressHUD.framework",
+				"$(DERIVED_FILE_DIR)/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,20 +474,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AF47031F31DD43002CC6E5 /* Bus.swift in Sources */,
+				85AF46EA1F31D24B002CC6E5 /* BaseModel.swift in Sources */,
+				85AF46E81F31D23D002CC6E5 /* Itinerary.swift in Sources */,
 				8520376F1F1D0405000D2B7F /* GradientButton.swift in Sources */,
 				852037771F1D0578000D2B7F /* UIColor-SS.swift in Sources */,
+				85AF46FB1F31D8DB002CC6E5 /* Item.swift in Sources */,
+				85AF46F31F31D78C002CC6E5 /* MyCustomPointAnnotation.swift in Sources */,
 				8520377A1F1D0656000D2B7F /* ThemeCollectionViewCell.swift in Sources */,
 				8520376B1F1D0372000D2B7F /* BaseViewController.swift in Sources */,
 				8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */,
+				85AF46F41F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift in Sources */,
+				85AF46F51F31D78C002CC6E5 /* CustomCalloutView.swift in Sources */,
 				8520377D1F1D06C3000D2B7F /* UIImage-SS.swift in Sources */,
 				852037691F1D0322000D2B7F /* ChooseThemeViewController.swift in Sources */,
 				8520377F1F1D072C000D2B7F /* Constant.swift in Sources */,
 				852037811F1D07B6000D2B7F /* DateTimeTool.swift in Sources */,
 				852037681F1D0322000D2B7F /* NewItineraryViewController.swift in Sources */,
 				852037731F1D0557000D2B7F /* UIView-SS.swift in Sources */,
+				85AF47021F31DD43002CC6E5 /* Theme.swift in Sources */,
+				85AF46F61F31D78C002CC6E5 /* CustomAnnotationView.swift in Sources */,
 				8520376E1F1D0405000D2B7F /* Scale.swift in Sources */,
+				85AF46FF1F31D9C5002CC6E5 /* FilterViewController.swift in Sources */,
+				85AF47051F32267E002CC6E5 /* TESTViewController.swift in Sources */,
 				852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */,
 				852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */,
+				85AF47071F322746002CC6E5 /* UILabel-SS.swift in Sources */,
+				85AF46F91F31D8D4002CC6E5 /* HTTPClient.swift in Sources */,
 				85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
 				852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */,
 			);
