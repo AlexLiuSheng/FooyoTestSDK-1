@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Mapbox
 //import SVProgressHUD
 //import ViewDeck
 
@@ -26,6 +27,7 @@ public class BaseViewController: UIViewController {
     //    }
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        MGLAccountManager.setAccessToken("pk.eyJ1IjoicHVzaGlhbiIsImEiOiJjaXdyaXptNDAweG1rMm90YmRnZHl0dDFpIn0.9kBN2eXNRe3uZ9VMoMhfhg")
         let backButton = UIBarButtonItem()
         backButton.title = ""
         navigationItem.backBarButtonItem = backButton
