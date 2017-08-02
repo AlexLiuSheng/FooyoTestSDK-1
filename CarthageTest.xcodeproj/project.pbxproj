@@ -51,6 +51,7 @@
 		85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
 		85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
 		85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
+		85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -391,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
 				852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */,
 				8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */,
 				8520379E1F1D0E55000D2B7F /* NewItineraryViewController.swift in Sources */,
