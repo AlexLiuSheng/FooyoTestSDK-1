@@ -11,13 +11,13 @@ import SwiftyJSON
 import Mapbox
 //import DateToolsSwift
 
-public class Item: BaseModel {
+public class FooyoItem: BaseModel {
     
-    static var items = [Item]()
+    static var items = [FooyoItem]()
     
     var ospId: Int?
     var name: String?
-    var category: Category?
+    var category: FooyoCategory?
     var operation: String?
     var budget: Double?
     var coverImages: String?
@@ -30,7 +30,7 @@ public class Item: BaseModel {
         name = json["name"].string
         operation = json["operation_hours"].string
         if json["category"] != nil {
-            category = Category(json: json["category"])
+            category = FooyoCategory(json: json["category"])
         }
         budget = json["budget"].double
         coordinateLan = json["lat"].double

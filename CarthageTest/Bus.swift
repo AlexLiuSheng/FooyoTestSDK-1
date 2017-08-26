@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class Bus: BaseModel {
+class FooyoBus: BaseModel {
     var name: String?
     var queueTime: Int?
     

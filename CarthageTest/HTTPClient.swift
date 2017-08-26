@@ -23,7 +23,7 @@ public class HttpClient: NSObject {
     weak var delegate: HttpClientDelegte?
     
     // MARK: - Items
-    func getItems(completion: @escaping (_ items: [Item]?, _ isSuccess: Bool) -> Void) {
+    func getItems(completion: @escaping (_ items: [FooyoItem]?, _ isSuccess: Bool) -> Void) {
         Alamofire.request("\(Constants.EndPoint.baseURL)/places", method: .get, encoding: JSONEncoding.default).responseJSON { (response) -> Void in
             debugPrint(response)
             let code = (response.response?.statusCode) ?? 500
@@ -31,9 +31,9 @@ public class HttpClient: NSObject {
                 if let json = response.result.value {
                     let data = JSON(json)
                     if data["places"] != nil {
-                        var items = [Item]()
-                        items = data["places"].arrayValue.map{ Item(json: $0) }
-                        Item.items = items
+                        var items = [FooyoItem]()
+                        items = data["places"].arrayValue.map{ FooyoItem(json: $0) }
+                        FooyoItem.items = items
                         completion(items, true)
                         return
                     }
@@ -53,7 +53,7 @@ public class HttpClient: NSObject {
         }
     }
     
-    func getCategories(completion: @escaping (_ categories: [Category]?, _ isSuccess: Bool) -> Void) {
+    func getCategories(completion: @escaping (_ categories: [FooyoCategory]?, _ isSuccess: Bool) -> Void) {
         Alamofire.request("\(Constants.EndPoint.baseURL)/categories", method: .get, encoding: JSONEncoding.default).responseJSON { (response) -> Void in
             debugPrint(response)
             let code = (response.response?.statusCode) ?? 500
@@ -61,9 +61,9 @@ public class HttpClient: NSObject {
                 if let json = response.result.value {
                     let data = JSON(json)
                     if data["categories"] != nil {
-                        var categories = [Category]()
-                        categories = data["categories"].arrayValue.map{ Category(json: $0) }
-                        Category.categories = categories
+                        var categories = [FooyoCategory]()
+                        categories = data["categories"].arrayValue.map{ FooyoCategory(json: $0) }
+                        FooyoCategory.categories = categories
                         completion(categories, true)
                         return
                     }

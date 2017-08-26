@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class Theme: BaseModel {
+class FooyoTheme: BaseModel {
     var name: String?
     
     init(json: JSON) {

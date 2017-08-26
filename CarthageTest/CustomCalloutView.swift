@@ -11,7 +11,7 @@ import Mapbox
 import AlamofireImage
 
 protocol CustomCalloutViewDelegate: class {
-    func didTapDirection(item: Item)
+    func didTapDirection(item: FooyoItem)
 }
 
 class CustomCalloutView: UIView, MGLCalloutView {

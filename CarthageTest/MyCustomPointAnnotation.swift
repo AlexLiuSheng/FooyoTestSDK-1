@@ -13,7 +13,7 @@ class MyCustomPointAnnotation: MGLPointAnnotation {
 //    var coverImage: String?
 //    var state: String?
 //    var id: Int?
-    var item: Item?
+    var item: FooyoItem?
     var reuseId: String?
     var reuseIdHigher: String?
     var reuseIdOriginal: String?

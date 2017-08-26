@@ -11,9 +11,9 @@ import SwiftyJSON
 import Mapbox
 //import DateToolsSwift
 
-public class Category: BaseModel {
+public class FooyoCategory: BaseModel {
     
-    static var categories = [Category]()
+    static var categories = [FooyoCategory]()
     
     var name: String?
     var color: String?
