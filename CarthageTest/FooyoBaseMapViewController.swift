@@ -16,7 +16,7 @@ public protocol FooyoBaseMapViewControllerDelegate: class {
 }
 //import
 public class FooyoBaseMapViewController: UIViewController {
-    weak var delegate: FooyoBaseMapViewControllerDelegate?
+    public weak var delegate: FooyoBaseMapViewControllerDelegate?
     var items: [FooyoItem]?
 //    var filters: [Constants.FilterType]? = [.Attraction, .Event, .FB, .Shop, .Hotel, .LinearTrail, .NonLinearTrail, .RestRoom,
 //                                            .PrayerRoom, .TickingCounter, .BusStop, .TramStop, .ExpressStop, .CableStop]
