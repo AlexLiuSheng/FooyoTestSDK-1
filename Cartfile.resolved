@@ -1,4 +1,4 @@
-binary "https://www.mapbox.com/ios-sdk/Mapbox-iOS-SDK.json" "3.6.1"
+binary "https://www.mapbox.com/ios-sdk/Mapbox-iOS-SDK.json" "3.6.2"
 github "Alamofire/Alamofire" "4.5.0"
 github "Alamofire/AlamofireImage" "3.2.0"
 github "SVProgressHUD/SVProgressHUD" "2.1.2"

@@ -89,6 +89,10 @@
 		85C51D411F4AE0F500700BEF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D401F4AE0F500700BEF /* Category.swift */; };
 		85C51D431F4AE61700700BEF /* UIViewController-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D421F4AE61700700BEF /* UIViewController-SS.swift */; };
 		85C51D451F4B3E2200700BEF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D441F4B3E2200700BEF /* BaseViewController.swift */; };
+		85DE37121F515E7F004AC6C6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46EB1F31D521002CC6E5 /* SwiftyJSON.framework */; };
+		85DE37131F515E7F004AC6C6 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */; };
+		85DE37141F515E7F004AC6C6 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */; };
+		85DE37151F515E7F004AC6C6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855374501F3233C1005CC168 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,9 +192,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */,
 				852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */,
+				85DE37121F515E7F004AC6C6 /* SwiftyJSON.framework in Frameworks */,
+				85DE37131F515E7F004AC6C6 /* SVProgressHUD.framework in Frameworks */,
 				852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */,
+				85DE37141F515E7F004AC6C6 /* AlamofireImage.framework in Frameworks */,
+				85DE37151F515E7F004AC6C6 /* Alamofire.framework in Frameworks */,
+				85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
