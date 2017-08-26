@@ -11,7 +11,7 @@ import Mapbox
 import AlamofireImage
 import SVProgressHUD
 
-protocol FooyoBaseMapViewControllerDelegate: class {
+public protocol FooyoBaseMapViewControllerDelegate: class {
     func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?)
 }
 //import
