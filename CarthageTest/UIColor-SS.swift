@@ -9,138 +9,265 @@
 import UIKit
 
 extension UIColor {
-    
-    
-    class var expressColor: UIColor {
-        return UIColor.sntDeepLavender
+//    convenience init(red: Int, green: Int, blue: Int) {
+//        assert(red >= 0 && red <= 255, "Invalid red component")
+//        assert(green >= 0 && green <= 255, "Invalid green component")
+//        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+//        
+//        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+//    }
+//    
+//    convenience init(rgb: Int) {
+//        self.init(
+//            red: (rgb >> 16) & 0xFF,
+//            green: (rgb >> 8) & 0xFF,
+//            blue: rgb & 0xFF
+//        )
+//    }
+    convenience init(hexString:String) {
+//        hexString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let hexString:NSString = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines) as NSString
+        let scanner = Scanner(string: hexString as String)
+        
+        if (hexString.hasPrefix("#")) {
+            scanner.scanLocation = 1
+        }
+        
+        var color:UInt32 = 0
+        scanner.scanHexInt32(&color)
+        
+        let mask = 0x000000FF
+        let r = Int(color >> 16) & mask
+        let g = Int(color >> 8) & mask
+        let b = Int(color) & mask
+        
+        let red   = CGFloat(r) / 255.0
+        let green = CGFloat(g) / 255.0
+        let blue  = CGFloat(b) / 255.0
+        
+        self.init(red:red, green:green, blue:blue, alpha:1)
     }
-    class var tramColor: UIColor {
-        return UIColor.sntGreenishTeal
-    }
-    class var busOneColor: UIColor {
-        return UIColor.sntDarkSkyBlue
-    }
-    class var busTwoColor: UIColor {
-        return UIColor.sntGoldenRod
-    }
-    class var busThreeColor: UIColor {
-        return UIColor.sntSalmon
-    }
+}
 
-
-    class var attractionColor: UIColor {
-        return UIColor.sntDeepLavender
-    }
-    class var showColor: UIColor {
-        return UIColor.sntGreenishTeal
-    }
-    class var restaurantColor: UIColor {
-        return UIColor.sntDarkGreyBlue
-    }
-    class var shopColor: UIColor {
-        return UIColor.sntGoldenRod
-    }
-    class var stopColor: UIColor {
-        return UIColor.sntSalmon
-    }
-    class var restroomColor: UIColor {
-        return UIColor.sntDarkSkyBlue
+extension UIColor {
+    class var ospSentosaBlue: UIColor {
+        return UIColor(red: 0.0, green: 174.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
     }
     
-    
-    class var sntRed: UIColor {
-        return UIColor(red: 244.0 / 255.0, green: 67.0 / 255.0, blue: 54.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntMelon: UIColor {
-        return UIColor(red: 253.0 / 255.0, green: 126.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntOrangeish: UIColor {
-        return UIColor(red: 250.0 / 255.0, green: 146.0 / 255.0, blue: 84.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntTomato: UIColor {
-        return UIColor(red: 241.0 / 255.0, green: 89.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
-    }
-    class var sntBlack16: UIColor {
-        return UIColor(white: 0.0, alpha: 0.16)
-    }
-    class var sntBlack19: UIColor {
-        return UIColor(white: 0.0, alpha: 0.19)
-    }
-    class var sntBlack13: UIColor {
-        return UIColor(white: 0.0, alpha: 0.13)
-    }
-    
-    class var sntBlack10: UIColor {
-        return UIColor(white: 0.0, alpha: 0.1)
-    }
-    
-    class var sntGreyish: UIColor {
-        return UIColor(white: 176.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntBlack8: UIColor {
-        return UIColor(white: 0.0, alpha: 0.08)
-    }
-    
-    class var sntBlack22: UIColor {
-        return UIColor(white: 0.0, alpha: 0.22)
-    }
-    
-    class var sntGreyishBrown: UIColor {
-        return UIColor(white: 84.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntWhite: UIColor { 
-        return UIColor(white: 233.0 / 255.0, alpha: 1.0)
-    }
-    class var sntWhiteTwo: UIColor {
-        return UIColor(white: 247.0 / 255.0, alpha: 1.0)
-    }
-    class var sntWhiteThree: UIColor {
-        return UIColor(white: 210.0 / 255.0, alpha: 1.0)
-    }
-    class var sntWarmGrey: UIColor {
-        return UIColor(white: 130.0 / 255.0, alpha: 1.0)
-    }
-    class var sntDeepLavender: UIColor {
-        return UIColor(red: 155.0 / 255.0, green: 89.0 / 255.0, blue: 182.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntGreenishTeal: UIColor {
-        return UIColor(red: 46.0 / 255.0, green: 204.0 / 255.0, blue: 113.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntGoldenRod: UIColor {
-        return UIColor(red: 241.0 / 255.0, green: 196.0 / 255.0, blue: 15.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntDarkGreyBlue: UIColor {
-        return UIColor(red: 52.0 / 255.0, green: 73.0 / 255.0, blue: 94.0 / 255.0, alpha: 1.0)
-    }
-    class var sntDarkGrey80: UIColor {
-        return UIColor(red: 38.0 / 255.0, green: 39.0 / 255.0, blue: 40.0 / 255.0, alpha: 0.8)
-    }
-    class var sntSalmon: UIColor {
-        return UIColor(red: 251.0 / 255.0, green: 140.0 / 255.0, blue: 105.0 / 255.0, alpha: 1.0)
-    }
-    
-    class var sntDarkSkyBlue: UIColor {
-        return UIColor(red: 44.0 / 255.0, green: 156.0 / 255.0, blue: 240.0 / 255.0, alpha: 1.0)
-    }
-    class var sntDenimBlue: UIColor {
+    class var ospFacebookBlue: UIColor {
         return UIColor(red: 59.0 / 255.0, green: 89.0 / 255.0, blue: 152.0 / 255.0, alpha: 1.0)
     }
-    class var sntDarkGreyBlue46: UIColor {
-        return UIColor(red: 52.0 / 255.0, green: 73.0 / 255.0, blue: 94.0 / 255.0, alpha: 0.46)
-    }
-    class var sntPinkishGrey: UIColor {
-        return UIColor(white: 201.0 / 255.0, alpha: 1.0)
+    
+    class var ospGrey: UIColor {
+        return UIColor(red: 140.0 / 255.0, green: 164.0 / 255.0, blue: 175.0 / 255.0, alpha: 1.0)
     }
     
-    class var sntWarmGreyTwo: UIColor {
-        return UIColor(white: 136.0 / 255.0, alpha: 1.0)
+    class var ospWhite: UIColor {
+        return UIColor(white: 238.0 / 255.0, alpha: 1.0)
     }
+    class var ospBlack: UIColor {
+        return UIColor(white: 0.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaOrange: UIColor {
+        return UIColor(red: 240.0 / 255.0, green: 125.0 / 255.0, blue: 0.0, alpha: 1.0)
+    }
+    
+    class var ospGrey50: UIColor {
+        return UIColor(red: 191.0 / 255.0, green: 206.0 / 255.0, blue: 213.0 / 255.0, alpha: 0.5)
+    }
+    
+    class var ospSentosaPink: UIColor {
+        return UIColor(red: 236.0 / 255.0, green: 0.0, blue: 140.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPurple: UIColor {
+        return UIColor(red: 124.0 / 255.0, green: 81.0 / 255.0, blue: 161.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospDarkGrey: UIColor {
+        return UIColor(red: 86.0 / 255.0, green: 100.0 / 255.0, blue: 106.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaBlueLightest: UIColor {
+        return UIColor(red: 109.0 / 255.0, green: 207.0 / 255.0, blue: 246.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospGrey20: UIColor {
+        return UIColor(red: 191.0 / 255.0, green: 206.0 / 255.0, blue: 213.0 / 255.0, alpha: 0.2)
+    }
+    
+    class var ospSentosaGreenLight: UIColor {
+        return UIColor(red: 126.0 / 255.0, green: 195.0 / 255.0, blue: 82.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospWhite50: UIColor {
+        return UIColor(white: 255.0 / 255.0, alpha: 0.5)
+    }
+    
+    class var ospSentosaRed10: UIColor {
+        return UIColor(red: 235.0 / 255.0, green: 28.0 / 255.0, blue: 36.0 / 255.0, alpha: 0.1)
+    }
+    
+    class var ospSentosaRedDark: UIColor {
+        return UIColor(red: 187.0 / 255.0, green: 19.0 / 255.0, blue: 26.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospOverlay: UIColor {
+        return UIColor(white: 0.0, alpha: 0.4)
+    }
+    
+    class var ospIoSblue: UIColor {
+        return UIColor(red: 0.0, green: 122.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaBlue20: UIColor {
+        return UIColor(red: 0.0, green: 174.0 / 255.0, blue: 239.0 / 255.0, alpha: 0.2)
+    }
+    
+    class var ospSentosaYellowDark: UIColor {
+        return UIColor(red: 255.0 / 255.0, green: 194.0 / 255.0, blue: 14.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaRed: UIColor {
+        return UIColor(red: 235.0 / 255.0, green: 28.0 / 255.0, blue: 36.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaBlueDarkest: UIColor {
+        return UIColor(red: 0.0, green: 111.0 / 255.0, blue: 154.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPurpleDark: UIColor {
+        return UIColor(red: 92.0 / 255.0, green: 45.0 / 255.0, blue: 145.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaRedLightest: UIColor {
+        return UIColor(red: 241.0 / 255.0, green: 91.0 / 255.0, blue: 103.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospGrey10: UIColor {
+        return UIColor(red: 191.0 / 255.0, green: 206.0 / 255.0, blue: 213.0 / 255.0, alpha: 0.1)
+    }
+    
+    class var ospSentosaPurpleLightest: UIColor {
+        return UIColor(red: 168.0 / 255.0, green: 128.0 / 255.0, blue: 185.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospDropShadow35: UIColor {
+        return UIColor(white: 0.0, alpha: 0.35)
+    }
+    
+    class var ospSentosaGreen50: UIColor {
+        return UIColor(red: 80.0 / 255.0, green: 184.0 / 255.0, blue: 72.0 / 255.0, alpha: 0.5)
+    }
+    
+    class var ospSentosaBlueLight: UIColor {
+        return UIColor(red: 0.0, green: 189.0 / 255.0, blue: 242.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaGreenDarkest: UIColor {
+        return UIColor(red: 40.0 / 255.0, green: 117.0 / 255.0, blue: 43.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaGreenDark: UIColor {
+        return UIColor(red: 60.0 / 255.0, green: 147.0 / 255.0, blue: 57.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaGreenLightest: UIColor {
+        return UIColor(red: 163.0 / 255.0, green: 207.0 / 255.0, blue: 98.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaBlueDark: UIColor {
+        return UIColor(red: 0.0, green: 139.0 / 255.0, blue: 191.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPurpleDarkest: UIColor {
+        return UIColor(red: 53.0 / 255.0, green: 4.0 / 255.0, blue: 87.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPurpleLight: UIColor {
+        return UIColor(red: 150.0 / 255.0, green: 101.0 / 255.0, blue: 170.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaRedDarkest: UIColor {
+        return UIColor(red: 139.0 / 255.0, green: 3.0 / 255.0, blue: 4.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaRedLight: UIColor {
+        return UIColor(red: 237.0 / 255.0, green: 22.0 / 255.0, blue: 81.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPeachDarkest: UIColor {
+        return UIColor(red: 183.0 / 255.0, green: 105.0 / 255.0, blue: 117.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPeachDark: UIColor {
+        return UIColor(red: 212.0 / 255.0, green: 127.0 / 255.0, blue: 135.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPeach: UIColor {
+        return UIColor(red: 246.0 / 255.0, green: 151.0 / 255.0, blue: 143.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPeachLight: UIColor {
+        return UIColor(red: 249.0 / 255.0, green: 180.0 / 255.0, blue: 163.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPeachLightest: UIColor {
+        return UIColor(red: 251.0 / 255.0, green: 201.0 / 255.0, blue: 188.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaYellowDarkest: UIColor {
+        return UIColor(red: 220.0 / 255.0, green: 169.0 / 255.0, blue: 14.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaYellow: UIColor {
+        return UIColor(red: 255.0 / 255.0, green: 242.0 / 255.0, blue: 0.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaYellowLight: UIColor {
+        return UIColor(red: 255.0 / 255.0, green: 244.0 / 255.0, blue: 95.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaYellowLightest: UIColor {
+        return UIColor(red: 255.0 / 255.0, green: 247.0 / 255.0, blue: 153.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPinkDarkest: UIColor {
+        return UIColor(red: 140.0 / 255.0, green: 0.0, blue: 82.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPinkDark: UIColor {
+        return UIColor(red: 186.0 / 255.0, green: 0.0, blue: 111.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPinkLight: UIColor {
+        return UIColor(red: 240.0 / 255.0, green: 103.0 / 255.0, blue: 166.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaPinkLightest: UIColor {
+        return UIColor(red: 244.0 / 255.0, green: 154.0 / 255.0, blue: 193.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaDarkGrey: UIColor { 
+        return UIColor(white: 86.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaGrey: UIColor { 
+        return UIColor(white: 170.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospGrabGreen: UIColor {
+        return UIColor(red: 0.0, green: 159.0 / 255.0, blue: 55.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospSentosaGreen: UIColor {
+        return UIColor(red: 80.0 / 255.0, green: 184.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var ospBlack20: UIColor { 
+        return UIColor(white: 0.0, alpha: 0.2)
+    }
+
+    
 }

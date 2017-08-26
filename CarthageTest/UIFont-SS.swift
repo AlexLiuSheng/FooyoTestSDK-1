@@ -13,14 +13,6 @@ extension UIFont {
         //        return UIFont(name: "PingFangSC", size: size)!
         return UIFont.systemFont(ofSize: size)
     }
-//    class func PingFangSCLightWithSize(size: CGFloat) -> UIFont {
-//        //        return UIFont(name: "PingFangSC", size: size)!
-//        return UIFont.systemFont(ofSize: size, weight: UIFontWeightLight)
-//    }
-//    class func PingFangSCMediumWithSize(size: CGFloat) -> UIFont {
-//        //        return UIFont(name: "PingFangSC", size: size)!
-//        return UIFont.systemFont(ofSize: size, weight: UIFontWeightMedium)
-//    }
     class func DefaultSemiBoldWithSize(size: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: size, weight: UIFontWeightSemibold)
     }

@@ -12,26 +12,45 @@ struct Constants {
     
     struct EndPoint {
         #if DEBUG
-        static let baseURL = "http://sentosa.staging.fooyo.sg/v1"
+        static let baseURL = "https://sentosa-api.fooyo.sg/v1"
         //            static let baseURL = "http://54.169.237.216/v1"
         //            static let baseURL = "https://api.travbook.me/v1"
         #else
-        static let baseURL = "http://sentosa.staging.fooyo.sg/v1"
+        static let baseURL = "https://sentosa-api.fooyo.sg/v1"
         //            static let baseURL = "https://api.travbook.me/v1"
         //            static let baseURL = "http://54.169.237.216/v1"
         #endif
     }
     
+    static let statusBarHeight: CGFloat = 20
+    static let navigationBarHeight: CGFloat = 44
     static let mainWidth: CGFloat = UIScreen.main.bounds.width
     static let mainHeight: CGFloat = UIScreen.main.bounds.height
     static let imageLoadTime: Double = 0.2
-    static let mapCenterLat: Double = 1.258773
-    static let mapCenterLong: Double = 103.816642
-    static let initZoomLevel: Double = 14
+    static let mapCenterLat: Double = 1.254585
+    static let mapCenterLong: Double = 103.822706
+    static let initZoomLevel: Double = 13
+    
+    
+    struct notifications {
+        static let FooyoDisplayAlert = Notification.Name("FooyoDisplayAlert")
+
+        static let call = Notification.Name("call")
+        static let message = Notification.Name("message")
+        static let direction = Notification.Name("direction")
+        static let modeSwitch = Notification.Name("mode_switch")
+        
+    }
+//
+//    enum Notification: String {
+//        case FooyoDisplayAlert = "FooyoDisplayAlert"        
+//    }
+    
+    
     static let coverImageRatio: CGFloat = 0.64
     static let generalErrorMessage: String = "Sorry, there is unexpected error.\nPlease try again later"
     static let routeNames = [" Walking ", " Bus1 ", " Bus2 ", " Bus3 ", " Express ", " Tram "]
-    static let routeColor = [UIColor.white, UIColor.busOneColor, UIColor.busTwoColor, UIColor.busThreeColor, UIColor.expressColor, UIColor.tramColor]
+//    static let routeColor = [UIColor.white, UIColor.busOneColor, UIColor.busTwoColor, UIColor.busThreeColor, UIColor.expressColor, UIColor.tramColor]
     static let tripTimeSource = ["Morning", "Afternoon"]
     static let tripDurationSource = ["Half Day", "One Full Day"]
     
@@ -55,12 +74,22 @@ struct Constants {
         case AZ
         case Distance
     }
-    enum FilterType {
-        case Attraction
-        case Show
-        case Restaurant
-        case Shop
-        case Stop
+    
+    enum FilterType: String {
+        case Attraction = "attraction"
+        case Event = "event"
+        case FB = "fb"
+        case Shop = "shop"
+        case Hotel = "hotel"
+        case LinearTrail = "linear_trail"
+        case NonLinearTrail = "non_linear_trail"
+        case RestRoom = "rest_room"
+        case PrayerRoom = "prayer_room"
+        case TickingCounter = "ticketing_counter"
+        case BusStop = "bus_stop"
+        case TramStop = "tram_stop"
+        case ExpressStop = "express_stop"
+        case CableStop = "cable_stop"
     }
     enum ChangePoint {
         case ChangeStart
@@ -89,12 +118,18 @@ struct Constants {
     
     enum ItemType: String {
         case Attraction = "attraction"
-        case Restaurant = "restaurant"
-        case Show = "show"
+        case Event = "event"
+        case FB = "fb"
         case Shop = "shop"
+        case Hotel = "hotel"
+        case Trail = "trail"
+        case RestRoom = "rest_room"
+        case PrayerRoom = "prayer_room"
+        case TickingCounter = "ticketing_counter"
         case BusStop = "bus_stop"
+        case TramStop = "tram_stop"
         case ExpressStop = "express_stop"
-        case Restroom = "restroom"
+        case CableStop = "cable_stop"
     }
     
     enum RouteType: String {
@@ -105,11 +140,6 @@ struct Constants {
     enum AuthType {
         case SignIn
         case SignUp
-    }
-    enum Notification: String {
-        case newItinerary = "newItinerary"
-        case updateItinerary = "updateItinerary"
-
     }
     enum ThemeName: String {
         case Culture = "Culture & Heritage"

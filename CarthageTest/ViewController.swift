@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = .white
         view.addSubview(button)
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
 //        let vc = FooyoSDKNewItineraryViewController()
         let vc = FooyoBaseMapViewController()
         let nav = UINavigationController(rootViewController: vc)
+        nav.navigationBar.isHidden = true
         self.present(nav, animated: true, completion: nil)
     }
 }

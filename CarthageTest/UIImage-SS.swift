@@ -28,4 +28,19 @@ extension UIImage {
         return newImage
     }
     
+    class func getBundleImage(name: String, replaceColor: UIColor? = nil) -> UIImage  {
+        if let bundlePath: String = Bundle.main.path(forResource: "FooyoSDK", ofType: "bundle") {
+            if let bundle = Bundle(path: bundlePath) {
+                let resource: String = bundle.path(forResource: name, ofType: "png")!
+                if let color = replaceColor {
+                    return (UIImage(contentsOfFile: resource)?.imageByReplacingContentWithColor(color: color))!
+                } else {
+                    return UIImage(contentsOfFile: resource)!
+                }
+            }
+        }
+        return UIImage()
+    }
+
+    
 }

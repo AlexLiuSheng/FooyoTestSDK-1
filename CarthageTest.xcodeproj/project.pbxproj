@@ -17,9 +17,8 @@
 		852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
 		852037681F1D0322000D2B7F /* NewItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037661F1D0322000D2B7F /* NewItineraryViewController.swift */; };
 		852037691F1D0322000D2B7F /* ChooseThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */; };
-		8520376B1F1D0372000D2B7F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewController.swift */; };
+		8520376B1F1D0372000D2B7F /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewControllerTest.swift */; };
 		8520376E1F1D0405000D2B7F /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376C1F1D0405000D2B7F /* Scale.swift */; };
-		8520376F1F1D0405000D2B7F /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376D1F1D0405000D2B7F /* GradientButton.swift */; };
 		852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037701F1D0437000D2B7F /* NSobject-SS.swift */; };
 		852037731F1D0557000D2B7F /* UIView-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037721F1D0557000D2B7F /* UIView-SS.swift */; };
 		852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037741F1D0578000D2B7F /* UIFont-SS.swift */; };
@@ -29,7 +28,6 @@
 		8520377F1F1D072C000D2B7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377E1F1D072C000D2B7F /* Constant.swift */; };
 		852037811F1D07B6000D2B7F /* DateTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037801F1D07B6000D2B7F /* DateTimeTool.swift */; };
 		8520378C1F1D0E08000D2B7F /* FooyoTestSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */; };
 		852037901F1D0E08000D2B7F /* FooyoTestSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		852037941F1D0E33000D2B7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377E1F1D072C000D2B7F /* Constant.swift */; };
 		852037951F1D0E37000D2B7F /* UIImage-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */; };
@@ -39,20 +37,38 @@
 		852037991F1D0E48000D2B7F /* UIColor-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037751F1D0578000D2B7F /* UIColor-SS.swift */; };
 		8520379A1F1D0E4B000D2B7F /* NSobject-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037701F1D0437000D2B7F /* NSobject-SS.swift */; };
 		8520379B1F1D0E4D000D2B7F /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376C1F1D0405000D2B7F /* Scale.swift */; };
-		8520379C1F1D0E50000D2B7F /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376D1F1D0405000D2B7F /* GradientButton.swift */; };
-		8520379D1F1D0E52000D2B7F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewController.swift */; };
+		8520379D1F1D0E52000D2B7F /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520376A1F1D0372000D2B7F /* BaseViewControllerTest.swift */; };
 		8520379E1F1D0E55000D2B7F /* NewItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037661F1D0322000D2B7F /* NewItineraryViewController.swift */; };
 		8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */; };
 		852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037721F1D0557000D2B7F /* UIView-SS.swift */; };
 		852037A11F1D0F55000D2B7F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8520374A1F1C927E000D2B7F /* SnapKit.framework */; };
 		852037A21F1D0F6C000D2B7F /* TGPControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852037641F1D023C000D2B7F /* TGPControls.framework */; };
-		852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
-		852037E21F1DE4C2000D2B7F /* FooyoTestSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */; };
-		85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
+		852037D91F1DA6F8000D2B7F /* FooyoSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoSDK.bundle */; };
+		852037E21F1DE4C2000D2B7F /* FooyoSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 852037D81F1DA6F8000D2B7F /* FooyoSDK.bundle */; };
+		8553744F1F32339F005CC168 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */; };
+		855374511F3233C1005CC168 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855374501F3233C1005CC168 /* Alamofire.framework */; };
+		85A39D2B1F514FC000BDDD9A /* UIImageView-SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D011F46E76500700BEF /* UIImageView-SDK.swift */; };
+		85A39D2C1F514FC000BDDD9A /* UILabel-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47061F322746002CC6E5 /* UILabel-SS.swift */; };
+		85A39D2D1F514FC000BDDD9A /* UIViewController-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D421F4AE61700700BEF /* UIViewController-SS.swift */; };
+		85A39D2E1F514FC000BDDD9A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F81F31D8D4002CC6E5 /* HTTPClient.swift */; };
+		85A39D2F1F514FC000BDDD9A /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D041F49DFC600700BEF /* ShadowButton.swift */; };
+		85A39D301F514FC000BDDD9A /* MyCustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46EF1F31D78C002CC6E5 /* MyCustomPointAnnotation.swift */; };
+		85A39D311F514FC000BDDD9A /* CustomCalloutViewItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F01F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift */; };
+		85A39D321F514FC000BDDD9A /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F11F31D78C002CC6E5 /* CustomCalloutView.swift */; };
+		85A39D331F514FC000BDDD9A /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46F21F31D78C002CC6E5 /* CustomAnnotationView.swift */; };
+		85A39D341F514FC000BDDD9A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47001F31DD43002CC6E5 /* Theme.swift */; };
+		85A39D351F514FC000BDDD9A /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47011F31DD43002CC6E5 /* Bus.swift */; };
+		85A39D361F514FC000BDDD9A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46FA1F31D8DB002CC6E5 /* Item.swift */; };
+		85A39D371F514FC000BDDD9A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E91F31D24B002CC6E5 /* BaseModel.swift */; };
+		85A39D381F514FC000BDDD9A /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E71F31D23D002CC6E5 /* Itinerary.swift */; };
+		85A39D391F514FC000BDDD9A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D401F4AE0F500700BEF /* Category.swift */; };
+		85A39D3A1F514FC100BDDD9A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D441F4B3E2200700BEF /* BaseViewController.swift */; };
+		85A39D3B1F514FC100BDDD9A /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47041F32267E002CC6E5 /* FooyoBaseMapViewController.swift */; };
+		85A39D3C1F514FC100BDDD9A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */; };
+		85AF46D91F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift */; };
 		85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
 		85AF46DD1F3184EC002CC6E5 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46DB1F31846A002CC6E5 /* Mapbox.framework */; };
-		85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */; };
-		85AF46E31F31D05D002CC6E5 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */; };
+		85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46D81F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift */; };
 		85AF46E51F31D164002CC6E5 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */; };
 		85AF46E81F31D23D002CC6E5 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E71F31D23D002CC6E5 /* Itinerary.swift */; };
 		85AF46EA1F31D24B002CC6E5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46E91F31D24B002CC6E5 /* BaseModel.swift */; };
@@ -66,8 +82,13 @@
 		85AF46FF1F31D9C5002CC6E5 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */; };
 		85AF47021F31DD43002CC6E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47001F31DD43002CC6E5 /* Theme.swift */; };
 		85AF47031F31DD43002CC6E5 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47011F31DD43002CC6E5 /* Bus.swift */; };
-		85AF47051F32267E002CC6E5 /* TESTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47041F32267E002CC6E5 /* TESTViewController.swift */; };
+		85AF47051F32267E002CC6E5 /* FooyoBaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47041F32267E002CC6E5 /* FooyoBaseMapViewController.swift */; };
 		85AF47071F322746002CC6E5 /* UILabel-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF47061F322746002CC6E5 /* UILabel-SS.swift */; };
+		85C51D021F46E76500700BEF /* UIImageView-SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D011F46E76500700BEF /* UIImageView-SDK.swift */; };
+		85C51D051F49DFC600700BEF /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D041F49DFC600700BEF /* ShadowButton.swift */; };
+		85C51D411F4AE0F500700BEF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D401F4AE0F500700BEF /* Category.swift */; };
+		85C51D431F4AE61700700BEF /* UIViewController-SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D421F4AE61700700BEF /* UIViewController-SS.swift */; };
+		85C51D451F4B3E2200700BEF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C51D441F4B3E2200700BEF /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,9 +129,8 @@
 		852037641F1D023C000D2B7F /* TGPControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TGPControls.framework; path = Carthage/Build/iOS/TGPControls.framework; sourceTree = "<group>"; };
 		852037661F1D0322000D2B7F /* NewItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItineraryViewController.swift; sourceTree = "<group>"; };
 		852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseThemeViewController.swift; sourceTree = "<group>"; };
-		8520376A1F1D0372000D2B7F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8520376A1F1D0372000D2B7F /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
 		8520376C1F1D0405000D2B7F /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
-		8520376D1F1D0405000D2B7F /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		852037701F1D0437000D2B7F /* NSobject-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSobject-SS.swift"; sourceTree = "<group>"; };
 		852037721F1D0557000D2B7F /* UIView-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-SS.swift"; sourceTree = "<group>"; };
 		852037741F1D0578000D2B7F /* UIFont-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-SS.swift"; sourceTree = "<group>"; };
@@ -122,8 +142,9 @@
 		852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FooyoTestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8520378A1F1D0E08000D2B7F /* FooyoTestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooyoTestSDK.h; sourceTree = "<group>"; };
 		8520378B1F1D0E08000D2B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoTestSDK.bundle; sourceTree = "<group>"; };
-		85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooyoBaseMapViewController.swift; sourceTree = "<group>"; };
+		852037D81F1DA6F8000D2B7F /* FooyoSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FooyoSDK.bundle; sourceTree = "<group>"; };
+		855374501F3233C1005CC168 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		85AF46D81F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooyoBaseMapViewControllerTest.swift; sourceTree = "<group>"; };
 		85AF46DB1F31846A002CC6E5 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
@@ -139,8 +160,13 @@
 		85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		85AF47001F31DD43002CC6E5 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		85AF47011F31DD43002CC6E5 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
-		85AF47041F32267E002CC6E5 /* TESTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TESTViewController.swift; sourceTree = "<group>"; };
+		85AF47041F32267E002CC6E5 /* FooyoBaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooyoBaseMapViewController.swift; sourceTree = "<group>"; };
 		85AF47061F322746002CC6E5 /* UILabel-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel-SS.swift"; sourceTree = "<group>"; };
+		85C51D011F46E76500700BEF /* UIImageView-SDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView-SDK.swift"; sourceTree = "<group>"; };
+		85C51D041F49DFC600700BEF /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		85C51D401F4AE0F500700BEF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		85C51D421F4AE61700700BEF /* UIViewController-SS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-SS.swift"; sourceTree = "<group>"; };
+		85C51D441F4B3E2200700BEF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +174,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855374511F3233C1005CC168 /* Alamofire.framework in Frameworks */,
+				8553744F1F32339F005CC168 /* AlamofireImage.framework in Frameworks */,
 				85AF46EC1F31D521002CC6E5 /* SwiftyJSON.framework in Frameworks */,
 				85AF46E51F31D164002CC6E5 /* SVProgressHUD.framework in Frameworks */,
-				85AF46E31F31D05D002CC6E5 /* AlamofireImage.framework in Frameworks */,
 				85AF46DC1F31846A002CC6E5 /* Mapbox.framework in Frameworks */,
 				852037651F1D023C000D2B7F /* TGPControls.framework in Frameworks */,
-				8520378F1F1D0E08000D2B7F /* FooyoTestSDK.framework in Frameworks */,
 				8520374B1F1C927E000D2B7F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,11 +200,11 @@
 		8520372C1F1C884F000D2B7F = {
 			isa = PBXGroup;
 			children = (
-				852037D81F1DA6F8000D2B7F /* FooyoTestSDK.bundle */,
+				852037D81F1DA6F8000D2B7F /* FooyoSDK.bundle */,
 				852037641F1D023C000D2B7F /* TGPControls.framework */,
 				8520374F1F1C92D2000D2B7F /* SnapKit.framework.dSYM */,
 				8520374A1F1C927E000D2B7F /* SnapKit.framework */,
-				852037371F1C884F000D2B7F /* CarthageTest */,
+				852037371F1C884F000D2B7F /* FooyoSDK */,
 				852037891F1D0E08000D2B7F /* FooyoTestSDK */,
 				852037361F1C884F000D2B7F /* Products */,
 				85AF46DA1F31846A002CC6E5 /* Frameworks */,
@@ -194,9 +220,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		852037371F1C884F000D2B7F /* CarthageTest */ = {
+		852037371F1C884F000D2B7F /* FooyoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				85C51D001F46E74700700BEF /* Extension */,
 				85AF46F71F31D8C3002CC6E5 /* HTTP */,
 				85AF46ED1F31D738002CC6E5 /* Widget */,
 				85AF46E61F31D1D7002CC6E5 /* Model */,
@@ -210,6 +237,7 @@
 				852037411F1C884F000D2B7F /* LaunchScreen.storyboard */,
 				852037441F1C884F000D2B7F /* Info.plist */,
 			);
+			name = FooyoSDK;
 			path = CarthageTest;
 			sourceTree = "<group>";
 		};
@@ -218,8 +246,6 @@
 			children = (
 				852037781F1D0656000D2B7F /* ThemeCollectionViewCell.swift */,
 				852037801F1D07B6000D2B7F /* DateTimeTool.swift */,
-				8520376C1F1D0405000D2B7F /* Scale.swift */,
-				8520376D1F1D0405000D2B7F /* GradientButton.swift */,
 				852037661F1D0322000D2B7F /* NewItineraryViewController.swift */,
 				852037671F1D0322000D2B7F /* ChooseThemeViewController.swift */,
 			);
@@ -238,9 +264,9 @@
 		85AF46D61F317F7F002CC6E5 /* BaseMap */ = {
 			isa = PBXGroup;
 			children = (
-				85AF47041F32267E002CC6E5 /* TESTViewController.swift */,
+				85AF47041F32267E002CC6E5 /* FooyoBaseMapViewController.swift */,
 				85AF46FE1F31D9C5002CC6E5 /* FilterViewController.swift */,
-				85AF46D81F318052002CC6E5 /* FooyoBaseMapViewController.swift */,
+				85AF46D81F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift */,
 			);
 			name = BaseMap;
 			sourceTree = "<group>";
@@ -248,7 +274,8 @@
 		85AF46D71F31800D002CC6E5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8520376A1F1D0372000D2B7F /* BaseViewController.swift */,
+				8520376A1F1D0372000D2B7F /* BaseViewControllerTest.swift */,
+				85C51D441F4B3E2200700BEF /* BaseViewController.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -256,6 +283,7 @@
 		85AF46DA1F31846A002CC6E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				855374501F3233C1005CC168 /* Alamofire.framework */,
 				85AF46EB1F31D521002CC6E5 /* SwiftyJSON.framework */,
 				85AF46E41F31D164002CC6E5 /* SVProgressHUD.framework */,
 				85AF46E21F31D05D002CC6E5 /* AlamofireImage.framework */,
@@ -272,6 +300,7 @@
 				85AF46FA1F31D8DB002CC6E5 /* Item.swift */,
 				85AF46E91F31D24B002CC6E5 /* BaseModel.swift */,
 				85AF46E71F31D23D002CC6E5 /* Itinerary.swift */,
+				85C51D401F4AE0F500700BEF /* Category.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,7 +308,7 @@
 		85AF46ED1F31D738002CC6E5 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
-				85AF46FD1F31D919002CC6E5 /* Extension */,
+				85C51D031F49DF8B00700BEF /* General */,
 				85AF46FC1F31D90C002CC6E5 /* Utility */,
 				85AF46EE1F31D77F002CC6E5 /* Map */,
 			);
@@ -309,21 +338,32 @@
 			isa = PBXGroup;
 			children = (
 				8520377E1F1D072C000D2B7F /* Constant.swift */,
+				8520376C1F1D0405000D2B7F /* Scale.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
 		};
-		85AF46FD1F31D919002CC6E5 /* Extension */ = {
+		85C51D001F46E74700700BEF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				85C51D011F46E76500700BEF /* UIImageView-SDK.swift */,
 				85AF47061F322746002CC6E5 /* UILabel-SS.swift */,
 				8520377C1F1D06C3000D2B7F /* UIImage-SS.swift */,
 				852037741F1D0578000D2B7F /* UIFont-SS.swift */,
 				852037751F1D0578000D2B7F /* UIColor-SS.swift */,
 				852037701F1D0437000D2B7F /* NSobject-SS.swift */,
 				852037721F1D0557000D2B7F /* UIView-SS.swift */,
+				85C51D421F4AE61700700BEF /* UIViewController-SS.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		85C51D031F49DF8B00700BEF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				85C51D041F49DFC600700BEF /* ShadowButton.swift */,
+			);
+			name = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852037431F1C884F000D2B7F /* LaunchScreen.storyboard in Resources */,
-				852037D91F1DA6F8000D2B7F /* FooyoTestSDK.bundle in Resources */,
+				852037D91F1DA6F8000D2B7F /* FooyoSDK.bundle in Resources */,
 				852037401F1C884F000D2B7F /* Assets.xcassets in Resources */,
 				8520373E1F1C884F000D2B7F /* Main.storyboard in Resources */,
 			);
@@ -435,7 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852037E21F1DE4C2000D2B7F /* FooyoTestSDK.bundle in Resources */,
+				852037E21F1DE4C2000D2B7F /* FooyoSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +494,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/SnapKit.framework",
@@ -462,6 +503,7 @@
 				"$(DERIVED_FILE_DIR)/AlamofireImage.framework",
 				"$(DERIVED_FILE_DIR)/SVProgressHUD.framework",
 				"$(DERIVED_FILE_DIR)/SwiftyJSON.framework",
+				"$(DERIVED_FILE_DIR)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,14 +517,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				85AF47031F31DD43002CC6E5 /* Bus.swift in Sources */,
+				85C51D051F49DFC600700BEF /* ShadowButton.swift in Sources */,
+				85C51D451F4B3E2200700BEF /* BaseViewController.swift in Sources */,
 				85AF46EA1F31D24B002CC6E5 /* BaseModel.swift in Sources */,
+				85C51D411F4AE0F500700BEF /* Category.swift in Sources */,
+				85C51D431F4AE61700700BEF /* UIViewController-SS.swift in Sources */,
 				85AF46E81F31D23D002CC6E5 /* Itinerary.swift in Sources */,
-				8520376F1F1D0405000D2B7F /* GradientButton.swift in Sources */,
 				852037771F1D0578000D2B7F /* UIColor-SS.swift in Sources */,
 				85AF46FB1F31D8DB002CC6E5 /* Item.swift in Sources */,
 				85AF46F31F31D78C002CC6E5 /* MyCustomPointAnnotation.swift in Sources */,
 				8520377A1F1D0656000D2B7F /* ThemeCollectionViewCell.swift in Sources */,
-				8520376B1F1D0372000D2B7F /* BaseViewController.swift in Sources */,
+				85C51D021F46E76500700BEF /* UIImageView-SDK.swift in Sources */,
+				8520376B1F1D0372000D2B7F /* BaseViewControllerTest.swift in Sources */,
 				8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */,
 				85AF46F41F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift in Sources */,
 				85AF46F51F31D78C002CC6E5 /* CustomCalloutView.swift in Sources */,
@@ -496,12 +542,12 @@
 				85AF46F61F31D78C002CC6E5 /* CustomAnnotationView.swift in Sources */,
 				8520376E1F1D0405000D2B7F /* Scale.swift in Sources */,
 				85AF46FF1F31D9C5002CC6E5 /* FilterViewController.swift in Sources */,
-				85AF47051F32267E002CC6E5 /* TESTViewController.swift in Sources */,
+				85AF47051F32267E002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
 				852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */,
 				852037761F1D0578000D2B7F /* UIFont-SS.swift in Sources */,
 				85AF47071F322746002CC6E5 /* UILabel-SS.swift in Sources */,
 				85AF46F91F31D8D4002CC6E5 /* HTTPClient.swift in Sources */,
-				85AF46D91F318052002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
+				85AF46D91F318052002CC6E5 /* FooyoBaseMapViewControllerTest.swift in Sources */,
 				852037711F1D0437000D2B7F /* NSobject-SS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,12 +556,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewController.swift in Sources */,
+				85A39D2B1F514FC000BDDD9A /* UIImageView-SDK.swift in Sources */,
+				85A39D2C1F514FC000BDDD9A /* UILabel-SS.swift in Sources */,
+				85A39D2D1F514FC000BDDD9A /* UIViewController-SS.swift in Sources */,
+				85A39D2E1F514FC000BDDD9A /* HTTPClient.swift in Sources */,
+				85A39D2F1F514FC000BDDD9A /* ShadowButton.swift in Sources */,
+				85A39D301F514FC000BDDD9A /* MyCustomPointAnnotation.swift in Sources */,
+				85A39D311F514FC000BDDD9A /* CustomCalloutViewItinerary.swift in Sources */,
+				85A39D321F514FC000BDDD9A /* CustomCalloutView.swift in Sources */,
+				85A39D331F514FC000BDDD9A /* CustomAnnotationView.swift in Sources */,
+				85A39D341F514FC000BDDD9A /* Theme.swift in Sources */,
+				85A39D351F514FC000BDDD9A /* Bus.swift in Sources */,
+				85A39D361F514FC000BDDD9A /* Item.swift in Sources */,
+				85A39D371F514FC000BDDD9A /* BaseModel.swift in Sources */,
+				85A39D381F514FC000BDDD9A /* Itinerary.swift in Sources */,
+				85A39D391F514FC000BDDD9A /* Category.swift in Sources */,
+				85A39D3A1F514FC100BDDD9A /* BaseViewController.swift in Sources */,
+				85A39D3B1F514FC100BDDD9A /* FooyoBaseMapViewController.swift in Sources */,
+				85A39D3C1F514FC100BDDD9A /* FilterViewController.swift in Sources */,
+				85AF46DE1F319B22002CC6E5 /* FooyoBaseMapViewControllerTest.swift in Sources */,
 				852037A01F1D0E5A000D2B7F /* UIView-SS.swift in Sources */,
 				8520379F1F1D0E57000D2B7F /* ChooseThemeViewController.swift in Sources */,
 				8520379E1F1D0E55000D2B7F /* NewItineraryViewController.swift in Sources */,
-				8520379D1F1D0E52000D2B7F /* BaseViewController.swift in Sources */,
-				8520379C1F1D0E50000D2B7F /* GradientButton.swift in Sources */,
+				8520379D1F1D0E52000D2B7F /* BaseViewControllerTest.swift in Sources */,
 				8520379B1F1D0E4D000D2B7F /* Scale.swift in Sources */,
 				8520379A1F1D0E4B000D2B7F /* NSobject-SS.swift in Sources */,
 				852037991F1D0E48000D2B7F /* UIColor-SS.swift in Sources */,
@@ -661,6 +724,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CarthageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.CarthageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -679,6 +743,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CarthageTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.fooyo.CarthageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
