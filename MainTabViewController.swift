@@ -45,7 +45,7 @@ class MainTabViewController: UITabBarController {
         case 0:
             return ExploreViewController()
         case 1:
-            return MyItineraryViewController()
+            return FooyoMyPlanViewController()
         case 2:
             let vc = FooyoBaseMapViewController()
             vc.delegate = self

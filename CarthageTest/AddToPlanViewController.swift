@@ -131,7 +131,7 @@ public class FooyoAddToPlanViewController: UIViewController {
     }
 }
 
-extension AddToPlanViewController: UITableViewDelegate, UITableViewDataSource {
+extension FooyoAddToPlanViewController: UITableViewDelegate, UITableViewDataSource {
     //    func numberOfSections(in tableView: UITableView) -> Int {
     //        return 2
     //    }
