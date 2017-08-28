@@ -79,7 +79,7 @@ func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?
         debugPrint(category)
         debugPrint(levelOneId)
         debugPrint(levelTwoId)
-    }
+}
 ```
 
 This function will be called when the information window is clicked.
