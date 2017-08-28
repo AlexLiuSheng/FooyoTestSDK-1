@@ -39,6 +39,10 @@ into your Xcode project.
 import FooyoTestSDK
 ```
 
+## SDK Demo Project
+
+[A Demo Project](https://github.com/fooyo/FooyoSDKDemo/tree/master) is created specically for the OSP project to demostrate how to integrate Fooyo's SDK.
+
 ## General SDK Parameters
 
 - `category`: Category Name (`String Value`);
