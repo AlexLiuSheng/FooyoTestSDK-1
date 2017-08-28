@@ -52,6 +52,8 @@ let vc = FooyoBaseMapViewController(category: String?, levelOneId: Int?)
 vc.delegate = self
 ```
 
+### SDK Variables
+
 Both of the two variables `category` and `levelOneId` are **optional**:
 
 - To show all the locations belong to a specific category, please specify the category name only;
@@ -92,3 +94,25 @@ let vc = FooyoNavigationViewController(startCategory: String?, startLevelOneId: 
 - `startLevelTwoId`: level two category id of the end location (**optional**).
 
 When the starting point is unspecified, the user's current location will be considered as the starting point.
+
+## My Plans SDK
+
+### Initialization
+
+```swift
+let vc = FooyoBaseMapViewController()
+```
+
+## Add To Plan SDK
+
+### Initialization
+
+```swift
+let vc = FooyoAddToPlanViewController(category: String, levelOneId: Int)
+```
+
+### SDK Variables
+
+- `category`: category name of the location (**compulsory**);
+- `levelOneId`: level one category id of the location (**compulsory**);
+
