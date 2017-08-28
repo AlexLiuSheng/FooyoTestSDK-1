@@ -72,7 +72,7 @@ func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?
     }
 ```
 
-Call back function when the information window is clicked.
+This function will be called when the information window is clicked.
 
 ## Navigation SDK
 
@@ -90,3 +90,5 @@ let vc = FooyoNavigationViewController(startCategory: String?, startLevelOneId: 
 - `endCategory`: category name of the end location (**compulsory**);
 - `startLevelOneId`: level one category id of the end location (**compulsory**);
 - `startLevelTwoId`: level two category id of the end location (**optional**).
+
+When the starting point is unspecified, the user's current location will be considered as the starting point.
