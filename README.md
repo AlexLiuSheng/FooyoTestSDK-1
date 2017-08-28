@@ -1,8 +1,11 @@
 # FooyoTestSDK
+
 Fooyo SDK for OSP
 
 # Installation
+
 ## Carthage
+
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
@@ -31,10 +34,15 @@ as well as the bundle file `FooyoSDK.bundle` inside `FooyoTestSDK.framework`
 into your Xcode project.
 
 # Usage
-## SDK Parameters
+
+## General SDK Parameters
+
 - `category`: Category Name (`String Value`);
 - `levelOneId`: The id for all the categories except the `Hotspots` of `Non-linear Trails` (`Int Value`);
 - `levelTwoId`: The id for all the `Hotspots` of `Non-linear Trails` (`Int Value`)
+
+Only `Hotspots` of `Non-linear Trails` will have `levelTwoId`. Their `levelOneId` is `Non-linear Trail` Id.
+
 ## BaseMap SDK
 
 ### Initialization
@@ -43,16 +51,19 @@ into your Xcode project.
 let vc = FooyoBaseMapViewController(category: String?, levelOneId: Int?)
 vc.delegate = self
 ```
-Both of the two variables `category` and `levelOneId` are optional:
+
+Both of the two variables `category` and `levelOneId` are **optional**:
 
 - To show all the locations belong to a specific category, please specify the category name only;
 - To show a specific location, please specify the category name and the id of this location;
 - To show all the locations, please do not sepcify any of them.
 
-### Delegate Functions
+### Delegate Function
+
 Delegate Prototal: `FooyoBaseMapViewControllerDelegate`.
 
 Delegate Function:
+
 ```swift
 func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?) {
         debugPrint(category)
@@ -60,18 +71,22 @@ func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?
         debugPrint(levelTwoId)
     }
 ```
-## Call Back Functions
+
+Call back function when the information window is clicked.
+
+## Navigation SDK
+
+### Initialization
 
 ```swift
-extension MyViewController: FRPhotoCollageCreateDelegate {
-    func didTapCancel() {
-        debugPrint("PhotoCollage is dismissed.")
-    }
-    
-    func didTapDone() {
-        debugPrint("PhotoCollage is completed.")
-    }
-    
-}
+let vc = FooyoNavigationViewController(startCategory: String?, startLevelOneId: Int? startLevelTwoId: Int?, endCategory: String?, endLevelOneId: Int?, endLevelTwoId: Int?)
 ```
 
+### SDK Variables
+
+- `startCategory`: category name of the start location (**optional**);
+- `startLevelOneId`: level one category id of the start location (**optional**);
+- `startLevelTwoId`: level two category id of the start location (**optional**);
+- `endCategory`: category name of the end location (**compulsory**);
+- `startLevelOneId`: level one category id of the end location (**compulsory**);
+- `startLevelTwoId`: level two category id of the end location (**optional**).
