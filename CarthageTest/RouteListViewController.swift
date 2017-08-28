@@ -204,7 +204,7 @@ public class FooyoNavigationViewController: UIViewController {
 //    }()
     
     // MARK: - Life Cycle
-    init(startCategory: String? = nil, startLevelOneId: Int? = nil, startLevelTwoId: Int? = nil, endCategory: String?, endLevelOneId: Int?, endLevelTwoId: Int? = nil ) {
+    public init(startCategory: String? = nil, startLevelOneId: Int? = nil, startLevelTwoId: Int? = nil, endCategory: String?, endLevelOneId: Int?, endLevelTwoId: Int? = nil ) {
         super.init(nibName: nil, bundle: nil)
         
     }

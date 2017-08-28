@@ -56,7 +56,7 @@ public class FooyoAddToPlanViewController: UIViewController {
         return t
     }()
     
-    init(category: String, levelOneId: Int) {
+    public init(category: String, levelOneId: Int) {
         super.init(nibName: nil, bundle: nil)
 //        self.selectedCategory = category
 //        self.selectedId = levelOneId

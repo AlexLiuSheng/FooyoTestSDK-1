@@ -149,7 +149,7 @@ public class FooyoBaseMapViewController: UIViewController {
     fileprivate var selectedId: Int?
     fileprivate var showOnMapMode: Bool = false
     //MARK: - Life Cycle
-    init(category: String? = nil, levelOneId: Int? = nil) {
+    public init(category: String? = nil, levelOneId: Int? = nil) {
         super.init(nibName: nil, bundle: nil)
         self.selectedCategory = category
         self.selectedId = levelOneId
