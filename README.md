@@ -35,6 +35,10 @@ into your Xcode project.
 
 # Usage
 
+```swift
+import FooyoTestSDK
+```
+
 ## General SDK Parameters
 
 - `category`: Category Name (`String Value`);
