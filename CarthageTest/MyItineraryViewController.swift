@@ -9,7 +9,7 @@
 import UIKit
 import SVProgressHUD
 
-public class MyItineraryViewController: UIViewController {
+public class FooyoMyPlanViewController: UIViewController {
     
     var pageMenu : CAPSPageMenu?
     fileprivate var controllerArray = [ItineraryListViewController]()

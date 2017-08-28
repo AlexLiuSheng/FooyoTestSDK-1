@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		852037391F1C884F000D2B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852037381F1C884F000D2B7F /* AppDelegate.swift */; };
-		8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520373A1F1C884F000D2B7F /* ViewController.swift */; };
 		8520373E1F1C884F000D2B7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8520373C1F1C884F000D2B7F /* Main.storyboard */; };
 		852037401F1C884F000D2B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8520373F1F1C884F000D2B7F /* Assets.xcassets */; };
 		852037431F1C884F000D2B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852037411F1C884F000D2B7F /* LaunchScreen.storyboard */; };
@@ -166,7 +165,6 @@
 /* Begin PBXFileReference section */
 		852037351F1C884F000D2B7F /* FooyoSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooyoSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852037381F1C884F000D2B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CarthageTest/AppDelegate.swift; sourceTree = "<group>"; };
-		8520373A1F1C884F000D2B7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CarthageTest/ViewController.swift; sourceTree = "<group>"; };
 		8520373D1F1C884F000D2B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8520373F1F1C884F000D2B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CarthageTest/Assets.xcassets; sourceTree = "<group>"; };
 		852037421F1C884F000D2B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -350,7 +348,6 @@
 			children = (
 				858C60631F52FA2100750BDF /* Widget */,
 				852037381F1C884F000D2B7F /* AppDelegate.swift */,
-				8520373A1F1C884F000D2B7F /* ViewController.swift */,
 				858C608C1F53873B00750BDF /* MainTabViewController.swift */,
 				858C60901F53985600750BDF /* ExploreViewController.swift */,
 				858C60611F525D0C00750BDF /* ShowOnMapInputViewController.swift */,
@@ -694,7 +691,6 @@
 				858C60831F53802100750BDF /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				8520376B1F1D0372000D2B7F /* BaseViewControllerTest.swift in Sources */,
 				858C60651F52FBB200750BDF /* FeatureInputTableViewCell.swift in Sources */,
-				8520373B1F1C884F000D2B7F /* ViewController.swift in Sources */,
 				85AF46F41F31D78C002CC6E5 /* CustomCalloutViewItinerary.swift in Sources */,
 				858C60621F525D0C00750BDF /* ShowOnMapInputViewController.swift in Sources */,
 				858C606A1F5305C000750BDF /* RouteListViewController.swift in Sources */,

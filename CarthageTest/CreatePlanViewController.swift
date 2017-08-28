@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CreatePlanViewController: UIViewController {
+public class FooyoCreatePlanViewController: UIViewController {
 
     fileprivate var fakeView: UIImageView! = {
         let t = UIImageView()

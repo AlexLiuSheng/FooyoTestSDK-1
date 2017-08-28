@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AddToPlanViewController: UIViewController {
+public class FooyoAddToPlanViewController: UIViewController {
     
     fileprivate var overlay: UIView! = {
         let t = UIView()
