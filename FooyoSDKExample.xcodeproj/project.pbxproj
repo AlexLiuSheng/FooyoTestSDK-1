@@ -164,7 +164,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		852037351F1C884F000D2B7F /* CarthageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852037351F1C884F000D2B7F /* FooyoSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooyoSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852037381F1C884F000D2B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CarthageTest/AppDelegate.swift; sourceTree = "<group>"; };
 		8520373A1F1C884F000D2B7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CarthageTest/ViewController.swift; sourceTree = "<group>"; };
 		8520373D1F1C884F000D2B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -291,7 +291,7 @@
 		852037361F1C884F000D2B7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				852037351F1C884F000D2B7F /* CarthageTest.app */,
+				852037351F1C884F000D2B7F /* FooyoSDKExample.app */,
 				852037881F1D0E08000D2B7F /* FooyoTestSDK.framework */,
 			);
 			name = Products;
@@ -538,9 +538,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		852037341F1C884F000D2B7F /* CarthageTest */ = {
+		852037341F1C884F000D2B7F /* FooyoSDKExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "CarthageTest" */;
+			buildConfigurationList = 852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "FooyoSDKExample" */;
 			buildPhases = (
 				852037311F1C884F000D2B7F /* Sources */,
 				852037321F1C884F000D2B7F /* Frameworks */,
@@ -553,9 +553,9 @@
 			dependencies = (
 				8520378E1F1D0E08000D2B7F /* PBXTargetDependency */,
 			);
-			name = CarthageTest;
+			name = FooyoSDKExample;
 			productName = CarthageTest;
-			productReference = 852037351F1C884F000D2B7F /* CarthageTest.app */;
+			productReference = 852037351F1C884F000D2B7F /* FooyoSDKExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		852037871F1D0E08000D2B7F /* FooyoTestSDK */ = {
@@ -611,7 +611,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				852037341F1C884F000D2B7F /* CarthageTest */,
+				852037341F1C884F000D2B7F /* FooyoSDKExample */,
 				852037871F1D0E08000D2B7F /* FooyoTestSDK */,
 			);
 		};
@@ -1020,7 +1020,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "CarthageTest" */ = {
+		852037471F1C884F000D2B7F /* Build configuration list for PBXNativeTarget "FooyoSDKExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				852037481F1C884F000D2B7F /* Debug */,
