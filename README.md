@@ -31,7 +31,10 @@ as well as the bundle file `FooyoSDK.bundle` inside `FooyoTestSDK.framework`
 into your Xcode project.
 
 # Usage
-
+## SDK Parameters
+- `category`: Category Name (`String Value`);
+- `levelOneId`: The id for all the categories except the `Hotspots` of `Non-linear Trails` (`Int Value`);
+- `levelTwoId`: The id for all the `Hotspots` of `Non-linear Trails` (`Int Value`)
 ## BaseMap SDK
 
 ### Initialization
@@ -40,13 +43,22 @@ into your Xcode project.
 let vc = FooyoBaseMapViewController(category: String?, levelOneId: Int?)
 vc.delegate = self
 ```
-Both of the two variables `category` and `levelOneId` are optional. 
+Both of the two variables `category` and `levelOneId` are optional:
 
 - To show all the locations belong to a specific category, please specify the category name only;
 - To show a specific location, please specify the category name and the id of this location;
 - To show all the locations, please do not sepcify any of them.
 
 ### Delegate Functions
+Delegate Prototal: `FooyoBaseMapViewControllerDelegate`
+Delegate Function:
+```swift
+func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?) {
+        debugPrint(category)
+        debugPrint(levelOneId)
+        debugPrint(levelTwoId)
+    }
+```
 ## Call Back Functions
 
 ```swift
