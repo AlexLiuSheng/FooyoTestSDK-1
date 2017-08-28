@@ -29,9 +29,6 @@ Run `carthage update` to build the framework and drag the following built
 `FooyoTestSDK.framework`
 as well as the bundle file `FooyoSDK.bundle` inside `FooyoTestSDK.framework`
 into your Xcode project.
-- To show all the locations belong to a specific category, please specify the category name only;
-- To show a specific location, please specify the category name and the id of this location;
-- To show all the locations, please do not sepcify any of them.
 
 # Usage
 
@@ -44,6 +41,11 @@ let vc = FooyoBaseMapViewController(category: String?, levelOneId: Int?)
 vc.delegate = self
 ```
 Both of the two variables `category` and `levelOneId` are optional. 
+
+- To show all the locations belong to a specific category, please specify the category name only;
+- To show a specific location, please specify the category name and the id of this location;
+- To show all the locations, please do not sepcify any of them.
+
 ### Delegate Functions
 ## Call Back Functions
 
