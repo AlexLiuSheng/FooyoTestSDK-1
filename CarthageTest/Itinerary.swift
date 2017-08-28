@@ -1,65 +1,65 @@
-////
-////  Itinerary.swift
-////  SmartSentosa
-////
-////  Created by Yangfan Liu on 15/4/17.
-////  Copyright © 2017 Yangfan Liu. All rights reserved.
-////
 //
-//import Foundation
-//import Mapbox
-//import SwiftyJSON
+//  Itinerary.swift
+//  SmartSentosa
 //
-//class Itinerary: BaseModel {
-//    
-//    static var myItineraries = [Itinerary]()
-//    static var past = [Itinerary]()
-//    static var today = [Itinerary]()
-//    static var future = [Itinerary]()
-//    static var todayAndFuture = [Itinerary]()
-//    
-//    static var todaySelected: Itinerary?
-//    static var nextDestination: Item?
-//    
-//    var time: String?
-//    var budget: Double?
-//    var theme: String?
-//    var name: String?
-//    var items: [Item]?
-//    var routes: [Route]?
+//  Created by Yangfan Liu on 15/4/17.
+//  Copyright © 2017 Yangfan Liu. All rights reserved.
+//
+
+import Foundation
+import Mapbox
+import SwiftyJSON
+
+class FooyoItinerary: BaseModel {
+    
+    static var myItineraries = [FooyoItinerary]()
+    static var past = [FooyoItinerary]()
+    static var today = [FooyoItinerary]()
+    static var future = [FooyoItinerary]()
+    static var todayAndFuture = [FooyoItinerary]()
+    
+    static var todaySelected: FooyoItinerary?
+    static var nextDestination: FooyoItem?
+    
+    var time: String?
+    var budget: Double?
+    var theme: String?
+    var name: String?
+    var items: [FooyoItem]?
+//    var routes: [FooyoRoute]?
 //    var tickets: [Ticket]?
-//    
-//    var tripType: String?
-//    var warnings: [String]?
-//    
-//    init(json: JSON) {
-//        super.init()
-//        id = json["id"].int
-//        
-//        if json["places"] != nil {
-//            items = json["places"].arrayValue.map{ Item(json: $0) }
-//        }
+    
+    var tripType: String?
+    var warnings: [String]?
+    
+    init(json: JSON) {
+        super.init()
+        id = json["id"].int
+        
+        if json["places"] != nil {
+            items = json["places"].arrayValue.map{ FooyoItem(json: $0) }
+        }
 //        if json["routes"] != nil {
-//            routes = json["routes"].arrayValue.map{ Route(json: $0) }
+//            routes = json["routes"].arrayValue.map{ FooyoRoute(json: $0) }
 //        }
-//        name = json["name"].string
-//        time = json["trip_start_time"].string
-//        if json["budget"].double != nil {
-//            budget = json["budget"].double
-//        } else if json["budget"].string != nil {
-//            let str = json["budget"].string
-//            budget = Double(str!)
-//        }
-//        debugPrint("the budget is \(budget)")
-//        tripType = json["trip_type"].string
-//        warnings = json["warnings"].arrayValue.map{ $0.string! }
+        name = json["name"].string
+        time = json["trip_start_time"].string
+        if json["budget"].double != nil {
+            budget = json["budget"].double
+        } else if json["budget"].string != nil {
+            let str = json["budget"].string
+            budget = Double(str!)
+        }
+        debugPrint("the budget is \(budget)")
+        tripType = json["trip_type"].string
+        warnings = json["warnings"].arrayValue.map{ $0.string! }
 //        generateTickets()
-//    }
-//    
-//    override init() {
-//        super.init()
-//    }
-//    
+    }
+    
+    override init() {
+        super.init()
+    }
+    
 //    func getBounds() -> MGLCoordinateBounds {
 //        
 //        var swLat = Double((items?[0].coordinateLan)!)!
@@ -156,4 +156,4 @@
 //        }
 //        return false
 //    }
-//}
+}

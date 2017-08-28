@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Alamofire.DataRequest.addAcceptableImageContentTypes(["image/jpg"])
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = ViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        window!.rootViewController = nav
+//        let vc = ViewController()
+//        let nav = UINavigationController(rootViewController: vc)
+        window!.rootViewController = MainTabViewController()
         window!.makeKeyAndVisible()
         return true
     }

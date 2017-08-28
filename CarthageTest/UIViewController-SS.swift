@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewController: HttpClientDelegte{
+extension UIViewController: HttpClientDelegte {
     func displayAlert(title: String, message: String, complete: (() -> Void)?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in

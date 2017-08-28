@@ -121,6 +121,7 @@ public class FooyoBaseMapViewController: UIViewController {
         let t = ShadowView()
         t.backgroundColor = UIColor.ospSentosaGreen
         t.layer.cornerRadius = Scale.scaleY(y: 52) / 2
+        t.isUserInteractionEnabled = true
         return t
     }()
     
@@ -142,7 +143,27 @@ public class FooyoBaseMapViewController: UIViewController {
         return t
     }()
     
+    
+    //for show on map
+    fileprivate var selectedCategory: String?
+    fileprivate var selectedId: Int?
+    fileprivate var showOnMapMode: Bool = false
     //MARK: - Life Cycle
+    init(category: String? = nil, levelOneId: Int? = nil) {
+        super.init(nibName: nil, bundle: nil)
+        self.selectedCategory = category
+        self.selectedId = levelOneId
+        if category != nil {
+            self.showOnMapMode = true
+        } else {
+            self.showOnMapMode = false
+        }
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -150,40 +171,41 @@ public class FooyoBaseMapViewController: UIViewController {
         applyGeneralVCSettings(vc: self)
 
         NotificationCenter.default.addObserver(self, selector: #selector(displayAlert(notification:)), name: Constants.notifications.FooyoDisplayAlert, object: nil)
-
-        loadPlaces()
-        loadCategries(withLoading: false)
-        
         setupMapView()
         setupSearchView()
         setupOtherViews()
         checkBundle()
-
+        
+        loadPlaces()
+        loadCategries(withLoading: false)
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if self.navigationController?.navigationBar.isHidden == false {
-            UIView.animate(withDuration: 0.3, animations: { 
-                self.navigationController?.navigationBar.isHidden = true
-            })
-        }
-    }
+//    override public func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        if self.navigationController?.navigationBar.isHidden == false {
+//            UIView.animate(withDuration: 0.3, animations: { 
+//                self.navigationController?.navigationBar.isHidden = true
+//            })
+//        }
+//    }
     
     
     //MARK: - Setup Views
     func setupSearchView() {
         view.addSubview(searchView)
-//        searchView.addSubview(searchIconOne)
+        //        searchView.addSubview(searchIconOne)
         searchView.addSubview(searchLabel)
         searchView.addSubview(searchIcon)
-//        searchView.addSubview(crossIconOne)
-//        crossIconOne.transform = CGAffineTransform.init(rotationAngle: CGFloat(M_PI_4))
-//        let crossGesture = UITapGestureRecognizer(target: self, action: #selector(crossHandler))
-//        crossIconOne.addGestureRecognizer(crossGesture)
+        //        searchView.addSubview(crossIconOne)
+        //        crossIconOne.transform = CGAffineTransform.init(rotationAngle: CGFloat(M_PI_4))
+        //        let crossGesture = UITapGestureRecognizer(target: self, action: #selector(crossHandler))
+        //        crossIconOne.addGestureRecognizer(crossGesture)
         let searchGesture = UITapGestureRecognizer(target: self, action: #selector(searchHandler))
         searchView.addGestureRecognizer(searchGesture)
         searchViewConstraints()
+        if showOnMapMode {
+            searchView.isHidden = true
+        }
     }
     
     func setupMapView() {
@@ -196,6 +218,12 @@ public class FooyoBaseMapViewController: UIViewController {
         mapView.showsUserLocation = true
         mapView.delegate = self
         view.addSubview(mapView)
+//        mapView.snp.makeConstraints { (make) in
+//            make.leading.equalToSuperview()
+//            make.trailing.equalToSuperview()
+//            make.top.equalTo(topLayoutGuide.snp.bottom)
+//            make.bottom.equalTo(bottomLayoutGuide.snp.top)
+//        }
     }
     
     func setupOtherViews() {
@@ -208,6 +236,12 @@ public class FooyoBaseMapViewController: UIViewController {
         view.addSubview(goBtn)
         goBtn.addSubview(goBtnInside)
         goBtn.addSubview(goBtnInsideLabel)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(goBtnHandler))
+        goBtn.addGestureRecognizer(gesture)
+        if showOnMapMode {
+            filterBtn.isHidden = true
+        }
+
         otherViewsConstraints()
     }
     
@@ -216,7 +250,8 @@ public class FooyoBaseMapViewController: UIViewController {
             make.leading.equalTo(Scale.scaleX(x: 10))
             make.trailing.equalTo(Scale.scaleX(x: -10))
             make.height.equalTo(Scale.scaleY(y: 40))
-            make.top.equalTo(Constants.statusBarHeight + Scale.scaleY(y: 10))
+            make.top.equalTo(topLayoutGuide.snp.bottom).offset(Scale.scaleY(y: 10))
+//            make.top.equalTo(Constants.statusBarHeight + Scale.scaleY(y: 10))
         }
         searchLabel.snp.makeConstraints { (make) in
             make.centerY.equalToSuperview()
@@ -251,8 +286,8 @@ public class FooyoBaseMapViewController: UIViewController {
         }
         goBtn.snp.makeConstraints { (make) in
             make.height.width.equalTo(Scale.scaleY(y: 52))
-            make.bottom.equalTo(Scale.scaleY(y: -10))
             make.trailing.equalTo(-Scale.scaleY(y: 10))
+            make.bottom.equalTo(bottomLayoutGuide.snp.top).offset(Scale.scaleY(y: -10))
         }
         goBtnInside.snp.makeConstraints { (make) in
             make.height.width.equalTo(Scale.scaleY(y: 22))
@@ -269,30 +304,37 @@ public class FooyoBaseMapViewController: UIViewController {
     
     //MARK: HTTP
     func loadCategries(withLoading: Bool) {
-        if withLoading {
-            SVProgressHUD.show()
-        }
-        HttpClient.sharedInstance.getCategories { (categories, isSuccess) in
-            SVProgressHUD.dismiss()
-            if isSuccess {
-                debugPrint("success")
-            } else {
-                debugPrint("fail")
+        if FooyoCategory.categories.isEmpty {
+            if withLoading {
+                SVProgressHUD.show()
+            }
+            HttpClient.sharedInstance.getCategories { (categories, isSuccess) in
+                SVProgressHUD.dismiss()
+                if isSuccess {
+                    debugPrint("success")
+                } else {
+                    debugPrint("fail")
+                }
             }
         }
     }
     
     func loadPlaces() {
-        SVProgressHUD.show()
-        HttpClient.sharedInstance.getItems { (places, isSuccess) in
-            SVProgressHUD.dismiss()
-            if isSuccess {
-                debugPrint("success")
-                self.items = places
-                self.reloadData()
-            } else {
-                debugPrint("fail")
+        if FooyoItem.items.isEmpty {
+            SVProgressHUD.show()
+            HttpClient.sharedInstance.getItems { (places, isSuccess) in
+                SVProgressHUD.dismiss()
+                if isSuccess {
+                    debugPrint("success")
+                    self.items = places
+                    self.reloadData()
+                } else {
+                    debugPrint("fail")
+                }
             }
+        } else {
+            self.items = FooyoItem.items
+            self.reloadData()
         }
     }
     
@@ -300,7 +342,9 @@ public class FooyoBaseMapViewController: UIViewController {
     func locateHandler() {
         mapView.userTrackingMode = .followWithHeading
     }
-    
+    func goBtnHandler() {
+        featureUnavailable()
+    }
     func crossHandler() {
         //        searchAnnotation?.reuseId = searchAnnotation?.item?.category
         searchAnnotation?.reuseIdHigher = nil
@@ -326,6 +370,7 @@ public class FooyoBaseMapViewController: UIViewController {
 //        clearMapData()
         
         if let items = items {
+            allAnnotations = [MyCustomPointAnnotation]()
             for each in items {
                 let point = MyCustomPointAnnotation()
                 point.coordinate = CLLocationCoordinate2D(latitude: each.coordinateLan!, longitude: each.coordinateLon!)
@@ -371,9 +416,37 @@ public class FooyoBaseMapViewController: UIViewController {
     }
     
     func reloadMapIcons() {
-//        clearMapView()
         var allAnno = [MyCustomPointAnnotation]()
-        allAnno = allAnnotations
+        if showOnMapMode {
+            if let category = selectedCategory {
+                if let id = selectedId {
+                    var selected = allAnnotations[0]
+                    for each in allAnnotations {
+                        let item = each.item
+                        if item?.category?.name == category && item?.ospId == id {
+                            selected = each
+                            break
+                        }
+                    }
+                    allAnno.append(selected)
+                } else {
+                    for each in allAnnotations {
+                        let item = each.item
+                        if item?.category?.name == category {
+                            allAnno.append(each)
+                        }
+                    }
+                    if allAnno.isEmpty {
+                        allAnno = allAnnotations.filter({ (anno) -> Bool in
+                            return anno.item?.category?.name == "Events"
+                        })
+                    }
+                }
+            }
+        } else {
+            allAnno = allAnnotations
+        }
+//        clearMapView()
 //        if let filters = filters {
 //            if filters.contains(.Attraction) {
 //                allAnno.append(contentsOf: attractionAnnotations)
@@ -419,6 +492,13 @@ public class FooyoBaseMapViewController: UIViewController {
 //            }
 //        }
         mapView.addAnnotations(allAnno)
+//        if showOnMapMode {
+//            for each in allAnno {
+//                debugPrint("i am going to reload")
+//                mapView.deselectAnnotation(each, animated: false)
+//                mapView.selectAnnotation(each, animated: true)
+//            }
+//        }
     }
     
     func checkBundle() {
