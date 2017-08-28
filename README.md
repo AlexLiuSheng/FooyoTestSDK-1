@@ -51,6 +51,7 @@ Both of the two variables `category` and `levelOneId` are optional:
 
 ### Delegate Functions
 Delegate Prototal: `FooyoBaseMapViewControllerDelegate`.
+
 Delegate Function:
 ```swift
 func didTapInformationWindow(category: String, levelOneId: Int, levelTwoId: Int?) {
