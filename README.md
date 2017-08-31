@@ -69,11 +69,11 @@ let vc = FooyoBaseMapViewController(index: FooyoIndex?)
 vc.delegate = self
 ```
 
-### SDK Variables
+### Variables
 
 For this function, the input parameter `FooyoIndex` would only inclue `categroy` and `levelOneId`. This function won't consider the `levelTwoId`, which means it can not be used to show a specific hotspot (of a non-linear trail) on the map.
 
-### SDK Usage
+### Usage
 
 - To show all the locations belong to a specific category, please specify the category name only：
 
@@ -109,7 +109,10 @@ func fooyoBaseMapViewController(didSelectInformationWindow index: FooyoIndex) {
 }
 ```
 
-This function will be called when the information window is clicked.
+This function will be called when the information window is clicked:
+
+- If the information window of a location/linear trail is clicked, the `category` and the `levelOneId` will be returned;
+- If the information window of a hotspot (of a non-linear trail) is clicked, the `category`, `levelOneId` as well as the `levelTwoId` will all be returned.
 
 ## Navigation SDK
 
@@ -121,13 +124,23 @@ let vc = FooyoNavigationViewController(startIndex: FooyoIndex?, endIndex: FooyoI
 
 ### SDK Variables
 
-- `startIndex`: category name of the start location (**optional**);
+- `startIndex`: FooyoIndex of the start location (**optional**);
 
-- `endIndex`: category name of the end location (**compulsory**);
+- `endIndex`: FooyoIndex of the end location (**compulsory**);
 
 
 When the `startIndex` is unspecified, the user's current location will be considered as the starting point.
 
+
+## Create Plan SDK
+
+### Initialization
+
+```swift
+let vc = FooyoCreatePlanViewController()
+let nav = UINavigationController(rootViewController: vc)
+self.present(nav, animated: true, completion: nil)
+```
 
 ## My Plans SDK
 
@@ -147,5 +160,5 @@ let vc = FooyoAddToPlanViewController(index: FooyoIndex)
 
 ### SDK Variables
 
-- `index`: index of the location/trail intended to add to a specific plan (**compulsory**);
+- `index`: FooyoIndex of the location/trail intended to add to a specific plan (**compulsory**);
 
