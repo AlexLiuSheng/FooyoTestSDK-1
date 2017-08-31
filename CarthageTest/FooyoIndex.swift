@@ -9,9 +9,9 @@
 import UIKit
 
 public class FooyoIndex: NSObject {
-    var category: String?
-    var levelOneId: Int?
-    var levelTwoId: Int?
+    public var category: String?
+    public var levelOneId: Int?
+    public var levelTwoId: Int?
     
     public init(category: String) {
         super.init()
