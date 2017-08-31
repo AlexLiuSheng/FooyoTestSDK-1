@@ -52,7 +52,7 @@ public class FooyoIndex: NSObject {
     var levelTwoId: Int?
 }
 ```
-`FooyoIndex` is designed for an easy communication between the base system and the SDK functions, which incldues the following parameters:
+`FooyoIndex` is designed for an easy communication between the base system and the SDK functions. For all the locations, trails and the hotspots of the trails, they would have their own `FooyoIndex` for a better reference. `FooyoIndex` incldues the following parameters:
 
 - `category`: Category Name (`String Value`);
 - `levelOneId`: The id for all the locations and trails (`Int Value`);
@@ -71,7 +71,9 @@ vc.delegate = self
 
 ### SDK Variables
 
-For this function, the index would only inclue `categroy` and `levelOneId` but both of the them are **optional**:
+For this function, the input parameter `FooyoIndex` would only inclue `categroy` and `levelOneId`. This function won't consider the `levelTwoId`, which means it can not be used to show a specific hotspot (of a non-linear trail) on the map.
+
+### SDK Usage
 
 - To show all the locations belong to a specific category, please specify the category name only：
 
@@ -80,14 +82,14 @@ let index = FooyoIndex(category: String)
 let vc = FooyoBaseMapViewController(index: FooyoIndex?)
 ```
 
-- To show a specific location, please specify the category name and the id of this location/trail:
+- To show a specific location/trail, please specify the category name and the id of this location/trail:
 
 ```swift
 let index = FooyoIndex(category: String, levelOneId: Int)
 let vc = FooyoBaseMapViewController(index: FooyoIndex?)
 ```
 
-- To show all the locations, please do not sepcify the index:
+- To show all the locations/trails, please do not sepcify the index:
 
 ```swift
 let vc = FooyoBaseMapViewController()
