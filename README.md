@@ -160,5 +160,5 @@ let vc = FooyoAddToPlanViewController(index: FooyoIndex)
 
 ### SDK Variables
 
-- `index`: FooyoIndex of the location/trail intended to add to a specific plan (**compulsory**);
+- `index`: FooyoIndex of the location/trail intended to be added to a specific plan (**compulsory**);
 
